@@ -1,0 +1,451 @@
+Keyboard-interactive authentication prompts from server:
+End of keyboard-interactive prompts from server
+    +----------------------------------------------------------------------+
+    ¦               • MobaXterm Professional Edition v22.0 •               ¦
+    ¦               (SSH client, X server and network tools)               ¦
+    ¦                                                                      ¦
+    ¦ ? SSH session to gr00022@10.161.80.8                                 ¦
+    ¦   • Direct SSH      :  ?                                             ¦
+    ¦   • SSH compression :  ?                                             ¦
+    ¦   • SSH-browser     :  ?                                             ¦
+    ¦   • X11-forwarding  :  ?  (remote display is forwarded through SSH)  ¦
+    ¦                                                                      ¦
+    ¦ ? For more info, ctrl+click on help or visit our website.            ¦
+    +----------------------------------------------------------------------+
+
+Last login: Mon Jun 20 15:17:52 2022 from 10.160.22.137
+******************************************************************************************************************
+         __            __                __           ___             ____
+        /\ \__        /\ \__            /\ \__       /\_ \           / ___\               __
+        \ \  _\   ____\ \  _\           \ \  _\    __\//\ \      __ /\ \__/  ___     ___ /\_\     ___    __
+         \ \ \/  / ,__\\ \ \     _______ \ \ \   / __ \\ \ \   / __ \ \  __\/ __ \ /  _  \/\ \  / ___\ / __ \
+          \ \ \_/\__,  \\ \ \_  /\______\ \ \ \_/\  __/ \_\ \_/\  __/\ \ \_/\ \_\ \/\ \/\ \ \ \/\ \__//\ \_\ \_
+           \ \__\/\____/ \ \__\ \/______/  \ \__\ \____\/\____\ \____\\ \_\\ \____/\ \_\ \ \ \_\ \____\ \__/ \_\
+            \/__/\/___/   \/__/             \/__/\/____/\/____/\/____/ \/_/ \/___/  \/_/\/_/\/_/\/____/\/__/\/_/
+
+******************************************************************************************************************
+AVISO: Ha accedido a un sistema propiedad de TELEFONICA DE VENEZUELA C.A. necesita tener autorizacion antes de
+       usarlo, estando usted limitado estrictamente al uso indicado en dicha autorizacion. El acceso no autorizado
+       a este sistema o el uso indebido del mismo esta prohibido y es contrario a la Politica de Seguridad
+       Corporativa y a la legislacion vigente.
+
+       Si usted revela informacion interna de TELEFONICA DE VENEZUELA CA o de sus clientes sin previa autorizacion
+       podra estar incurriendo en una violacion de la Normativa de la Compania, que podria incluso suponer la
+       posible comision de un delito o falta.
+
+1.) Sea responsable con el uso del servicio.
+2.) Su acceso será monitoreado y auditado.
+3.) Después de tres intentos fallidos de login, su cuenta será inhabilitada.
+
+******************************************************************************************************************
+Ultimo login al Sistema: glb00020  pts/18       10.160.22.136    Tue Jul 17 09:15 - 09:16  (00:00)
+-bash-3.2$ bash
+bash-3.2$ su - PriAdmin
+Password:
+Ultimo login al Sistema: glb00020  pts/18       10.160.22.136    Tue Jul 17 09:15 - 09:16  (00:00)
+Sourcing /export/home/Primary-Administrator/.profile-EIS.....
+root@platino1 # bash
+root@platino1 # bahs
+bash: bahs: command not found
+root@platino1 # bash
+root@platino1 #
+root@platino1 # clear
+root@platino1 #
+root@platino1 # \
+root@platino1 >
+root@platino1 # iostat -E
+sd3       Soft Errors: 0 Hard Errors: 0 Transport Errors: 1
+Vendor: TSSTcorp Product: DVD-ROM TS-L462C Revision: SI00 Serial No:
+Size: 2.66GB <2661416960 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 11 Predictive Failure Analysis: 0
+ssd18     Soft Errors: 0 Hard Errors: 16 Transport Errors: 16
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Serial No:
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd19     Soft Errors: 0 Hard Errors: 16 Transport Errors: 16
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Serial No:
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd20     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Serial No:
+Size: 0.00GB <1048576 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 32251881 Predictive Failure Analysis: 0
+ssd22     Soft Errors: 0 Hard Errors: 674414 Transport Errors: 3529
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Serial No:
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 674398 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd23     Soft Errors: 0 Hard Errors: 552730 Transport Errors: 1790
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Serial No:
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 552714 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd24     Soft Errors: 0 Hard Errors: 1248 Transport Errors: 231
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Serial No:
+Size: 0.00GB <1048576 bytes>
+Media Error: 0 Device Not Ready: 1 No Device: 1223 Recoverable: 0
+Illegal Request: 14909 Predictive Failure Analysis: 0
+ssd25     Soft Errors: 0 Hard Errors: 548204 Transport Errors: 1904
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Serial No:
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 548188 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd26     Soft Errors: 16 Hard Errors: 15 Transport Errors: 0
+Vendor: SEAGATE  Product: ST314670FSUN146G Revision: 055A Serial No: 062444SKFZ
+Size: 146.81GB <146810536448 bytes>
+Media Error: 7 Device Not Ready: 0 No Device: 4 Recoverable: 16
+Illegal Request: 66 Predictive Failure Analysis: 0
+ssd27     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST314670FSUN146G Revision: 055A Serial No: 0612440G4T
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 66 Predictive Failure Analysis: 0
+st0       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: HP       Product: Ultrium 5-SCSI   Revision: Y5BS Serial No:
+root@platino1 #
+root@platino1 #
+root@platino1 #
+root@platino1 # iostat -iE
+sd3       Soft Errors: 0 Hard Errors: 0 Transport Errors: 1
+Vendor: TSSTcorp Product: DVD-ROM TS-L462C Revision: SI00 Device Id:
+Size: 2.66GB <2661416960 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 11 Predictive Failure Analysis: 0
+ssd18     Soft Errors: 0 Hard Errors: 16 Transport Errors: 16
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Device Id: id1,ssd@n600c0ff0000000000b192204823a0301
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd19     Soft Errors: 0 Hard Errors: 16 Transport Errors: 16
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Device Id: id1,ssd@n600c0ff0000000000b19224b92b10701
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd20     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Device Id: id1,ssd@n600c0ff0000000000b19224b92b10700
+Size: 0.00GB <1048576 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 32251881 Predictive Failure Analysis: 0
+ssd22     Soft Errors: 0 Hard Errors: 674414 Transport Errors: 3529
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Device Id: id1,ssd@n600c0ff0000000000b19227a864b0801
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 674398 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd23     Soft Errors: 0 Hard Errors: 552730 Transport Errors: 1790
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Device Id: id1,ssd@n600c0ff0000000000b1922117e918d01
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 552714 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd24     Soft Errors: 0 Hard Errors: 1248 Transport Errors: 231
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Device Id: id1,ssd@n600c0ff0000000000b1922117e918d00
+Size: 0.00GB <1048576 bytes>
+Media Error: 0 Device Not Ready: 1 No Device: 1223 Recoverable: 0
+Illegal Request: 14909 Predictive Failure Analysis: 0
+ssd25     Soft Errors: 0 Hard Errors: 548204 Transport Errors: 1904
+Vendor: SUN      Product: StorEdge 3510    Revision: 415G Device Id: id1,ssd@n600c0ff0000000000b19226433cb1601
+Size: 146.54GB <146540593152 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 548188 Recoverable: 0
+Illegal Request: 4 Predictive Failure Analysis: 0
+ssd26     Soft Errors: 16 Hard Errors: 15 Transport Errors: 0
+Vendor: SEAGATE  Product: ST314670FSUN146G Revision: 055A Device Id: id1,ssd@n20000014c3e5efbf
+Size: 146.81GB <146810536448 bytes>
+Media Error: 7 Device Not Ready: 0 No Device: 4 Recoverable: 16
+Illegal Request: 66 Predictive Failure Analysis: 0
+ssd27     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST314670FSUN146G Revision: 055A Device Id: id1,ssd@n20000014c3aed426
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 66 Predictive Failure Analysis: 0
+st0       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: HP       Product: Ultrium 5-SCSI   Revision: Y5BS Device Id:
+root@platino1 #
+root@platino1 #
+root@platino1 # dmesg
+
+Tue Jun 21 14:21:01 VET 2022
+Jun 20 13:41:30 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:41:30 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:41:30 platino1        Error for Command: write(10)               Error Level: Retryable
+Jun 20 13:41:30 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:41:30 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 13:41:30 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:41:30 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:41:34 platino1        Error for Command: write(10)               Error Level: Retryable
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:41:34 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2324                      Error Block: 2324
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:41:34 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:41:34 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 13 mesg 077: V-2-77: vx_fshdchange - /dev/vx/dsk/datadg/oracle1 file system 999 fileset, fileset header : checksum failed
+Jun 20 13:41:34 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 14 mesg 096: V-2-96: vx_setfsflags - /dev/vx/dsk/datadg/oracle1 file system fullfsck flag set - vx_fshdchange
+Jun 20 13:41:37 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 15 mesg 077: V-2-77: vx_fshdchange - /dev/vx/dsk/datadg/oracle2 file system 999 fileset, fileset header : checksum failed
+Jun 20 13:41:37 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 16 mesg 096: V-2-96: vx_setfsflags - /dev/vx/dsk/datadg/oracle2 file system fullfsck flag set - vx_fshdchange
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:41:40 platino1        Error for Command: write(10)               Error Level: Retryable
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:41:40 platino1        Error for Command: write(10)               Error Level: Retryable
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:41:40 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:41:40 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 17 mesg 077: V-2-77: vx_fshdchange - /dev/vx/dsk/datadg/oracle3 file system 999 fileset, fileset header : checksum failed
+Jun 20 13:41:40 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 18 mesg 096: V-2-96: vx_setfsflags - /dev/vx/dsk/datadg/oracle3 file system fullfsck flag set - vx_fshdchange
+Jun 20 13:42:01 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 19 mesg 077: V-2-77: vx_fshdchange - /dev/vx/dsk/datadg/recovery file system 999 fileset, fileset header : checksum failed
+Jun 20 13:42:01 platino1 vxfs: [ID 702911 kern.warning] WARNING: msgcnt 20 mesg 096: V-2-96: vx_setfsflags - /dev/vx/dsk/datadg/recovery file system fullfsck flag set - vx_fshdchange
+Jun 20 13:42:11 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:42:11 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 13:42:11 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:42:11 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 13:42:11 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:42:11 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:42:18 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:42:18 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 13:42:18 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:42:18 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 13:42:18 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:42:18 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:42:37 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 13:42:37 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 13:42:37 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:42:37 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 6433CB16-01
+Jun 20 13:42:37 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:42:37 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00 (ssd24):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00 (ssd24):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:51:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 13:51:50 platino1        Corrupt label; wrong magic number
+Jun 20 13:52:16 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00 (ssd24):
+Jun 20 13:52:16 platino1        Corrupt label; wrong magic number
+Jun 20 13:52:18 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00 (ssd24):
+Jun 20 13:52:18 platino1        Corrupt label; wrong magic number
+Jun 20 13:52:18 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00 (ssd24):
+Jun 20 13:52:18 platino1        Corrupt label; wrong magic number
+Jun 20 13:54:32 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:54:32 platino1        Corrupt label; wrong magic number
+Jun 20 13:54:32 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 13:54:32 platino1        Corrupt label; wrong magic number
+Jun 20 13:54:33 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:54:33 platino1        Corrupt label; wrong magic number
+Jun 20 13:54:33 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:54:33 platino1        Corrupt label; wrong magic number
+Jun 20 13:54:33 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 13:54:33 platino1        Corrupt label; wrong magic number
+Jun 20 13:54:33 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 13:54:33 platino1        Corrupt label; wrong magic number
+Jun 20 13:55:02 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 13:55:02 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 13:55:02 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 13:55:02 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 13:55:02 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 13:55:02 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 14:22:16 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 14:22:16 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 14:22:16 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 14:22:16 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 14:22:16 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 6433CB16-01
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 14:22:16 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 14:45:58 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 14:45:58 platino1        Corrupt label; wrong magic number
+Jun 20 14:45:58 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 14:45:58 platino1        Corrupt label; wrong magic number
+Jun 20 14:45:58 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 14:45:58 platino1        Corrupt label; wrong magic number
+Jun 20 14:45:58 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 14:45:58 platino1        Corrupt label; wrong magic number
+Jun 20 14:45:59 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 14:45:59 platino1        Corrupt label; wrong magic number
+Jun 20 14:45:59 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 14:45:59 platino1        Corrupt label; wrong magic number
+Jun 20 15:24:34 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 15:24:34 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 15:24:34 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 15:24:34 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 15:24:34 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 15:24:34 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 15:24:50 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 15:24:50 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 7A864B08-01
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 15:24:50 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 15:32:07 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 15:32:07 platino1        Error for Command: read(10)                Error Level: Retryable
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 2320                      Error Block: 2320
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-01
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 15:32:07 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 16:11:19 platino1 sshd[18633]: [ID 800047 auth.crit] fatal: Read from socket failed: Connection reset by peer
+Jun 20 21:43:45 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 21:43:45 platino1        Corrupt label; wrong magic number
+Jun 20 21:43:45 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601 (ssd25):
+Jun 20 21:43:45 platino1        Corrupt label; wrong magic number
+Jun 20 21:43:45 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 21:43:45 platino1        Corrupt label; wrong magic number
+Jun 20 21:43:45 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801 (ssd22):
+Jun 20 21:43:45 platino1        Corrupt label; wrong magic number
+Jun 20 21:43:45 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 21:43:45 platino1        Corrupt label; wrong magic number
+Jun 20 21:43:45 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23):
+Jun 20 21:43:45 platino1        Corrupt label; wrong magic number
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00 (ssd24):
+Jun 20 21:43:48 platino1        Error for Command: test_unit_ready         Error Level: Retryable
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 0                         Error Block: 0
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-00
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.warning] WARNING: /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00 (ssd24):
+Jun 20 21:43:48 platino1        Error for Command: test_unit_ready         Error Level: Retryable
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  Requested Block: 0                         Error Block: 0
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  Vendor: SUN                                Serial Number: 117E918D-00
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  Sense Key: Unit_Attention
+Jun 20 21:43:48 platino1 scsi: [ID 107833 kern.notice]  ASC: 0x29 (power on, reset, or bus reset occurred), ASCQ: 0x0, FRU: 0x0
+Jun 21 07:17:56 platino1 scsi: [ID 243001 kern.warning] WARNING: /scsi_vhci (scsi_vhci0):
+Jun 21 07:17:56 platino1        /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01 (ssd23): Command Timeout on path fp2/ssd@w266000c0ff8b1922,1
+Jun 21 07:17:56 platino1 vxdmp: [ID 917986 kern.notice] NOTICE: VxVM vxdmp V-5-0-112 disabled path 118/0xb8 belonging to the dmpnode 271/0x28
+Jun 21 07:17:56 platino1 vxdmp: [ID 824220 kern.notice] NOTICE: VxVM vxdmp V-5-0-111 disabled dmpnode 271/0x28
+Jun 21 07:22:26 platino1 vxdmp: [ID 736771 kern.notice] NOTICE: VxVM vxdmp V-5-0-148 enabled path 118/0xb8 belonging to the dmpnode 271/0x28
+Jun 21 07:22:26 platino1 vxdmp: [ID 899070 kern.notice] NOTICE: VxVM vxdmp V-5-0-147 enabled dmpnode 271/0x28
+root@platino1 #
+root@platino1 #
+root@platino1 # format
+Searching for disks...done
+
+c8t600C0FF0000000000B19227A864B0801d0: configured with capacity of 136.47GB
+c8t600C0FF0000000000B1922117E918D01d0: configured with capacity of 136.47GB
+c8t600C0FF0000000000B19226433CB1601d0: configured with capacity of 136.47GB
+
+
+AVAILABLE DISK SELECTIONS:
+       0. c1t0d0 <SUN146G cyl 14087 alt 2 hd 24 sec 848>
+          /pci@9,600000/SUNW,qlc@2/fp@0,0/ssd@w21000014c3aed426,0
+       1. c1t1d0 <SUN146G cyl 14087 alt 2 hd 24 sec 848>
+          /pci@9,600000/SUNW,qlc@2/fp@0,0/ssd@w21000014c3e5efbf,0
+       2. c8t600C0FF0000000000B19224B92B10700d0 <SUN-StorEdge3510-415G cyl 62 alt 2 hd 2 sec 16>
+          /scsi_vhci/ssd@g600c0ff0000000000b19224b92b10700
+       3. c8t600C0FF0000000000B19224B92B10701d0 <SUN-StorEdge3510-415G cyl 35211 alt 2 hd 64 sec 127>
+          /scsi_vhci/ssd@g600c0ff0000000000b19224b92b10701
+       4. c8t600C0FF0000000000B19227A864B0801d0 <SUN-StorEdge3510-415G cyl 35211 alt 2 hd 64 sec 127>
+          /scsi_vhci/ssd@g600c0ff0000000000b19227a864b0801
+       5. c8t600C0FF0000000000B1922117E918D00d0 <SUN-StorEdge3510-415G cyl 62 alt 2 hd 2 sec 16>
+          /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d00
+       6. c8t600C0FF0000000000B1922117E918D01d0 <SUN-StorEdge3510-415G cyl 35211 alt 2 hd 64 sec 127>
+          /scsi_vhci/ssd@g600c0ff0000000000b1922117e918d01
+       7. c8t600C0FF0000000000B19226433CB1601d0 <SUN-StorEdge3510-415G cyl 35211 alt 2 hd 64 sec 127>
+          /scsi_vhci/ssd@g600c0ff0000000000b19226433cb1601
+       8. c8t600C0FF0000000000B192204823A0301d0 <SUN-StorEdge3510-415G cyl 35211 alt 2 hd 64 sec 127>
+          /scsi_vhci/ssd@g600c0ff0000000000b192204823a0301
+Specify disk (enter its number): 2
+selecting c8t600C0FF0000000000B19224B92B10700d0
+[disk formatted]
+
+
+FORMAT MENU:
+        disk       - select a disk
+        type       - select (define) a disk type
+        partition  - select (define) a partition table
+        current    - describe the current disk
+        format     - format and analyze the disk
+        repair     - repair a defective sector
+        label      - write label to the disk
+        analyze    - surface analysis
+        defect     - defect list management
+        backup     - search for backup labels
+        verify     - read and display labels
+        save       - save new disk/partition definitions
+        inquiry    - show vendor, product and revision
+        volname    - set 8-character volume name
+        !<cmd>     - execute <cmd>, then return
+        quit
+format> q
+root@platino1 #
+root@platino1 #
+root@platino1 # vxdisk -g datadg02 list
+VxVM vxdisk ERROR V-5-1-607 Diskgroup datadg02 not found
+root@platino1 # vxdisk -g datadg list
+VxVM vxdisk ERROR V-5-1-607 Diskgroup datadg not found
+root@platino1 #
+root@platino1 #
+root@platino1 #
+root@platino1 # vxdisk -g datadg03 list
+VxVM vxdisk ERROR V-5-1-607 Diskgroup datadg03 not found
+root@platino1 #
+root@platino1 # vxdisk -g datadg0 list
+VxVM vxdisk ERROR V-5-1-607 Diskgroup datadg0 not found
+root@platino1 #
+root@platino1 # vxdisk -g datadg04 list
+VxVM vxdisk ERROR V-5-1-607 Diskgroup datadg04 not found
+root@platino1 #
+root@platino1 # mount /u01
+UX:vxfs mount: ERROR: V-3-20023: file system on /dev/vx/dsk/datadg/oracle1 has structural damage
+root@platino1 # mount /u02
+UX:vxfs mount: ERROR: V-3-20023: file system on /dev/vx/dsk/datadg/oracle2 has structural damage
+root@platino1 # mount /u03
+UX:vxfs mount: ERROR: V-3-20023: file system on /dev/vx/dsk/datadg/oracle3 has structural damage
+root@platino1 # mount /recovery_area
+UX:vxfs mount: ERROR: V-3-20023: file system on /dev/vx/dsk/datadg/recovery has structural damage
+root@platino1 # mount /nomirror
+UX:vxfs mount: ERROR: V-3-20023: file system on /dev/vx/dsk/datadg/nomirror has structural damage
+root@platino1 #
+root@platino1 #

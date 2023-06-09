@@ -1,0 +1,45 @@
+CellCLI> LIST PHYSICALDISK WHERE DISKTYPE=flashdisk AND STATUS=failed DETAIL
+	 name:                   FLASH_2_0
+	 deviceName:             /dev/sdm
+	 diskType:               FlashDisk
+	 flashLifeLeft:          100
+	 luns:                   2_0
+	 makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+	 physicalFirmware:       UIO6
+	 physicalInsertTime:     2014-02-19T06:01:39-04:30
+	 physicalSerial:         11000213483
+	 physicalSize:           186.264515399932861328125G
+	 slotNumber:             "PCI Slot: 2; FDOM: 0"
+	 status:                 failed
+
+CellCLI> LIST PHYSICALDISK
+	 36:0     	 DRVYHE     	 normal
+	 36:1     	 DU0KGE     	 normal
+	 36:2     	 DUAELE     	 normal
+	 36:3     	 DU9SYE     	 normal
+	 36:4     	 DU8UZE     	 normal
+	 36:5     	 DU43TE     	 normal
+	 36:6     	 DU9RKE     	 normal
+	 36:7     	 DRXBVE     	 normal
+	 36:8     	 DUBK8E     	 normal
+	 36:9     	 DU9MAE     	 normal
+	 36:10    	 DUAEDE     	 normal
+	 36:11    	 DU6AZE     	 normal
+	 FLASH_1_0	 11000212812	 normal
+	 FLASH_1_1	 11000212649	 normal
+	 FLASH_1_2	 11000212882	 normal
+	 FLASH_1_3	 11000212867	 normal
+	 FLASH_2_0	 11000213483	 failed
+	 FLASH_2_1	 11000213655	 warning - peer failure
+	 FLASH_2_2	 11000214231	 warning - peer failure
+	 FLASH_2_3	 11000213848	 warning - peer failure
+	 FLASH_4_0	 11000221993	 normal
+	 FLASH_4_1	 11000222134	 normal
+	 FLASH_4_2	 11000222241	 normal
+	 FLASH_4_3	 11000221736	 normal
+	 FLASH_5_0	 11000219846	 normal
+	 FLASH_5_1	 11000219949	 normal
+	 FLASH_5_2	 11000220235	 normal
+	 FLASH_5_3	 11000220230	 normal
+
+

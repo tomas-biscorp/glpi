@@ -1,0 +1,400 @@
+CellCLI> list physicaldisk detail
+         name:                   36:0
+         deviceId:               24
+         deviceName:             /dev/sdq
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_0
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DRVYHE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             0
+         status:                 normal
+
+         name:                   36:1
+         deviceId:               25
+         deviceName:             /dev/sdr
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_1
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DU0KGE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             1
+         status:                 normal
+
+         name:                   36:2
+         deviceId:               26
+         deviceName:             /dev/sds
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_2
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DUAELE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             2
+         status:                 normal
+
+         name:                   36:3
+         deviceId:               27
+         deviceName:             /dev/sdt
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_3
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DU9SYE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             3
+         status:                 normal
+
+         name:                   36:4
+         deviceId:               28
+         deviceName:             /dev/sdu
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_4
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DU8UZE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             4
+         status:                 normal
+
+         name:                   36:5
+         deviceId:               29
+         deviceName:             /dev/sdv
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_5
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DU43TE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             5
+         status:                 normal
+
+         name:                   36:6
+         deviceId:               30
+         deviceName:             /dev/sdw
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_6
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DU9RKE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             6
+         status:                 normal
+
+         name:                   36:7
+         deviceId:               31
+         deviceName:             /dev/sdx
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_7
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DRXBVE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             7
+         status:                 normal
+
+         name:                   36:8
+         deviceId:               32
+         deviceName:             /dev/sdy
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_8
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DUBK8E
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             8
+         status:                 normal
+
+         name:                   36:9
+         deviceId:               33
+         deviceName:             /dev/sdz
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_9
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DU9MAE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             9
+         status:                 normal
+
+         name:                   36:10
+         deviceId:               34
+         deviceName:             /dev/sdaa
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_10
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DUAEDE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             10
+         status:                 normal
+
+         name:                   36:11
+         deviceId:               35
+         deviceName:             /dev/sdab
+         diskType:               HardDisk
+         enclosureDeviceId:      36
+         errOtherCount:          0
+         luns:                   0_11
+         makeModel:              "HGST    H101212SESUN1.2T"
+         physicalFirmware:       A720
+         physicalInsertTime:     2014-02-19T06:01:35-04:30
+         physicalInterface:      sas
+         physicalSerial:         DU6AZE
+         physicalSize:           1.091615281999111175537109375T
+         slotNumber:             11
+         status:                 normal
+
+         name:                   FLASH_1_0
+         deviceName:             /dev/sdi
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   1_0
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000212812
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 1; FDOM: 0"
+         status:                 normal
+
+         name:                   FLASH_1_1
+         deviceName:             /dev/sdj
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   1_1
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000212649
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 1; FDOM: 1"
+         status:                 normal
+
+         name:                   FLASH_1_2
+         deviceName:             /dev/sdk
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   1_2
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000212882
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 1; FDOM: 2"
+         status:                 normal
+
+         name:                   FLASH_1_3
+         deviceName:             /dev/sdl
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   1_3
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000212867
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 1; FDOM: 3"
+         status:                 normal
+
+         name:                   FLASH_2_0
+         deviceName:             /dev/sdm
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   2_0
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000213483
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 2; FDOM: 0"
+         status:                 failed
+
+         name:                   FLASH_2_1
+         deviceName:             /dev/sdn
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   2_1
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000213655
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 2; FDOM: 1"
+         status:                 warning - peer failure
+
+         name:                   FLASH_2_2
+         deviceName:             /dev/sdo
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   2_2
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000214231
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 2; FDOM: 2"
+         status:                 warning - peer failure
+
+         name:                   FLASH_2_3
+         deviceName:             /dev/sdp
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   2_3
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000213848
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 2; FDOM: 3"
+         status:                 warning - peer failure
+
+         name:                   FLASH_4_0
+         deviceName:             /dev/sde
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   4_0
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000221993
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 4; FDOM: 0"
+         status:                 normal
+
+         name:                   FLASH_4_1
+         deviceName:             /dev/sdf
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   4_1
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000222134
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 4; FDOM: 1"
+         status:                 normal
+
+         name:                   FLASH_4_2
+         deviceName:             /dev/sdg
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   4_2
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000222241
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 4; FDOM: 2"
+         status:                 normal
+
+         name:                   FLASH_4_3
+         deviceName:             /dev/sdh
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   4_3
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000221736
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 4; FDOM: 3"
+         status:                 normal
+
+         name:                   FLASH_5_0
+         deviceName:             /dev/sda
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   5_0
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000219846
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 5; FDOM: 0"
+         status:                 normal
+
+         name:                   FLASH_5_1
+         deviceName:             /dev/sdb
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   5_1
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000219949
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 5; FDOM: 1"
+         status:                 normal
+
+         name:                   FLASH_5_2
+         deviceName:             /dev/sdc
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   5_2
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000220235
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 5; FDOM: 2"
+         status:                 normal
+
+         name:                   FLASH_5_3
+         deviceName:             /dev/sdd
+         diskType:               FlashDisk
+         flashLifeLeft:          100
+         luns:                   5_3
+         makeModel:              "Sun Flash Accelerator F80 PCIe Card"
+         physicalFirmware:       UIO6
+         physicalInsertTime:     2014-02-19T06:01:39-04:30
+         physicalSerial:         11000220230
+         physicalSize:           186.264515399932861328125G
+         slotNumber:             "PCI Slot: 5; FDOM: 3"
+         status:                 normal

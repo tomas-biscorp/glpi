@@ -1,0 +1,775 @@
+=========== SUN(TM) EXPLORER DATA COLLECTOR (Version 6.3) ===========
+=========== Patch level: 
+
+Information was gathered on Tue May 10 02:52:17 VET 2022.
+
+System Serial number: BEF0843067
+
+Date: 2022.05.10.06.39
+Finished: 2022.05.10.06.52
+Hostname: sg02-01
+Hostid: 8501d557
+Release: 5.10
+
+Uptime:   2:42am  up 17:17,  3 users,  load average: 0.49, 0.38, 0.30
+
+
+===================================================================================================================================================================
+
+
+--------------- ------------------------------------  -------------- ---------
+TIME            EVENT-ID                              MSG-ID         SEVERITY
+--------------- ------------------------------------  -------------- ---------
+Aug 24 2010     274ae149-6630-edc5-80e9-e55743191a55  PCIEX-8000-3S  Critical  
+
+Host        : sg02-01
+Platform    : SUNW,SPARC-Enterprise	Chassis_id  : BEF0843067
+Product_sn  : 
+
+Fault class : fault.io.pciex.device-interr max 29%
+              fault.io.pciex.bus-linkerr max 14%
+Affects     : dev:////pci@3,700000/SUNW,qlc@0,1
+              dev:////pci@3,700000/SUNW,qlc@0
+              dev:////pci@3,700000
+                  faulted but still in service
+FRU         : "iou#1-pci#4" (hc://:product-id=SUNW,SPARC-Enterprise:server-id=sg02-01:chassis-id=BEF0843067/chassis=0/ioboard=1/hostbridge=1/pciexrc=1/pciexbus=2/pciexdev=0) max 29%
+              "iou#1-pci#4" (hc:///component=iou#1-pci#4) 14%
+                  faulty
+
+Description : A problem has been detected on one of the specified devices or on
+              one of the specified connecting buses.
+
+Response    : One or more device instances may be disabled
+
+Impact      : Loss of services provided by the device instances associated with
+              this fault
+
+Action      : Use 'fmadm faulty' to provide a more detailed view of this event.
+              If a plug-in card is involved check for badly-seated cards or
+              bent pins. Please refer to the associated reference document at
+              http://sun.com/msg/PCIEX-8000-3S for the latest service
+              procedures and policies regarding this diagnosis.
+
+--------------- ------------------------------------  -------------- ---------
+TIME            EVENT-ID                              MSG-ID         SEVERITY
+--------------- ------------------------------------  -------------- ---------
+Sep 22 2014     74b7e268-06d6-45ff-9f1b-f32deb3b33d8  PCIEX-8000-YJ  Major     
+
+Host        : sg02-01
+Platform    : SUNW,SPARC-Enterprise	Chassis_id  : BEF0843067
+Product_sn  : 
+
+Fault class : fault.io.pciex.device-pcie-ce max 17%
+              fault.io.pciex.bus-linkerr-corr max 8%
+Affects     : dev:////pci@1,700000/network@0,3
+              dev:////pci@1,700000/network@0
+              dev:////pci@1,700000/network@0,1
+              dev:////pci@1,700000/network@0,2
+                  faulted but still in service
+FRU         : "iou#1-pci#2" (hc:///component=iou#1-pci#2)
+                  faulty
+
+Description : Too many recovered bus errors have been detected, which indicates
+              a problem with the specified bus or with the specified
+              transmitting device. This may degrade into an unrecoverable
+              fault.
+
+Response    : One or more device instances may be disabled
+
+Impact      : Loss of services provided by the device instances associated with
+              this fault
+
+Action      : Use 'fmadm faulty' to provide a more detailed view of this event.
+              If a plug-in card is involved check for badly-seated cards or
+              bent pins. Please refer to the associated reference document at
+              http://sun.com/msg/PCIEX-8000-YJ for the latest service
+              procedures and policies regarding this diagnosis.
+
+==================================================================================================================================================================
+
+zoneadm-list -cv .out
+
+  ID NAME             STATUS     PATH                           BRAND    IP    
+   0 global           running    /                              native   shared
+   1 EOS              running    /export/EOS                    native   excl  
+   2 SART             running    /export/SART                   native   excl  
+
+==================================================================================================================================================================
+
+diskinfo
+
+AVAILABLE SCSI DEVICES:
+
+   Location	Vendor		Product		Rev  Serial #	Dual Port
+
+    c0t0d0	HITACHI    H101414SCSUN146G	SA25 0835ETW0PA	primary  
+    c0t1d0	SEAGATE    ST914602SSUN146G	0603 0822963B9H	primary  
+   c1t3d31	SUN        Universal Xport 	0760 SG83943524	primary  
+   c2t4d31	SUN        Universal Xport 	0760 SG84122668	primary  
+
+c3t600A0B800048DD06000008AD4C6BF39Bd0	SUN        CSM200_R        	0760 SG83943524	primary  
+c3t600A0B800048DD06000008B24C6BF4DDd0	SUN        CSM200_R        	0760 SG83943524	primary  
+c3t600A0B800048DD06000008EC4C6C0264d0	SUN        CSM200_R        	0760 SG83943524	primary  
+c3t600A0B800048DDC200000ABE559B70C2d0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t600A0B800048DDC200000AC855CC54ACd0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t600A0B800048DDC200000ACA55CC571Dd0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t600A0B800048DDC2000007B14C6BFFE4d0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t600A0B800048DDC2000007B54C6C0145d0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t600A0B800048DDC2000009D752013D55d0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t600A0B800048DDC2000009DB52013D99d0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t600A0B800048DDC2000007984C6BF418d0	SUN        CSM200_R        	0760 SG84122668	primary  
+c3t60002AC00000000000000C6A000087FEd0	3PARdata   VV              	3226 0C6A000087FE	primary  
+c3t60002AC00000000000000C6B000087FEd0	3PARdata   VV              	3226 0C6B000087FE	primary  
+c3t60002AC00000000000000C6C000087FEd0	3PARdata   VV              	3226 0C6C000087FE	primary  
+c3t60002AC00000000000000C6D000087FEd0	3PARdata   VV              	3226 0C6D000087FE	primary  
+c3t60002AC00000000000000C6E000087FEd0	3PARdata   VV              	3226 0C6E000087FE	primary  
+c3t60002AC00000000000000C6F000087FEd0	3PARdata   VV              	3226 0C6F000087FE	primary  
+c3t60002AC00000000000000C70000087FEd0	3PARdata   VV              	3226 0C70000087FE	primary  Searching for disks...done
+
+
+==================================================================================================================================================================
+
+format.out 
+
+AVAILABLE DISK SELECTIONS:
+       0. c0t0d0 <SUN146G cyl 14087 alt 2 hd 24 sec 848>
+          /pci@0,600000/pci@0/pci@8/pci@0/scsi@1/sd@0,0
+       1. c0t1d0 <SUN146G cyl 14087 alt 2 hd 24 sec 848>
+          /pci@0,600000/pci@0/pci@8/pci@0/scsi@1/sd@1,0
+       2. c1t3d31 <SUN-UniversalXport-0710 cyl 8 alt 2 hd 64 sec 64>
+          /pci@3,700000/SUNW,qlc@0/fp@0,0/ssd@w204600a0b848dd06,1f
+       3. c2t4d31 <SUN-UniversalXport-0710 cyl 8 alt 2 hd 64 sec 64>
+          /pci@3,700000/SUNW,qlc@0,1/fp@0,0/ssd@w201700a0b848dd06,1f
+          
+       4. c3t600A0B800048DD06000008AD4C6BF39Bd0 <drive type unknown>
+          /scsi_vhci/ssd@g600a0b800048dd06000008ad4c6bf39b
+       5. c3t600A0B800048DD06000008B24C6BF4DDd0 <drive type unknown>
+          /scsi_vhci/ssd@g600a0b800048dd06000008b24c6bf4dd
+       6. c3t600A0B800048DD06000008EC4C6C0264d0 <SUN-CSM200_R-0760 cyl 51198 alt 2 hd 64 sec 64>
+          /scsi_vhci/ssd@g600a0b800048dd06000008ec4c6c0264
+       7. c3t600A0B800048DDC200000ABE559B70C2d0 <drive type unknown>
+          /scsi_vhci/ssd@g600a0b800048ddc200000abe559b70c2
+       8. c3t600A0B800048DDC200000AC855CC54ACd0 <SUN-CSM200_R-0760 cyl 15358 alt 2 hd 64 sec 64>
+          /scsi_vhci/ssd@g600a0b800048ddc200000ac855cc54ac
+       9. c3t600A0B800048DDC200000ACA55CC571Dd0 <SUN-CSM200_R-0760 cyl 15358 alt 2 hd 64 sec 64>
+          /scsi_vhci/ssd@g600a0b800048ddc200000aca55cc571d
+      10. c3t600A0B800048DDC2000007B14C6BFFE4d0 <SUN-CSM200_R-0760 cyl 40958 alt 2 hd 64 sec 64>
+          /scsi_vhci/ssd@g600a0b800048ddc2000007b14c6bffe4
+      11. c3t600A0B800048DDC2000007B54C6C0145d0 <SUN-CSM200_R-0760 cyl 51198 alt 2 hd 64 sec 64>
+          /scsi_vhci/ssd@g600a0b800048ddc2000007b54c6c0145
+      12. c3t600A0B800048DDC2000009D752013D55d0 <drive type unknown>
+          /scsi_vhci/ssd@g600a0b800048ddc2000009d752013d55
+      13. c3t600A0B800048DDC2000009DB52013D99d0 <drive type unknown>
+          /scsi_vhci/ssd@g600a0b800048ddc2000009db52013d99
+      14. c3t600A0B800048DDC2000007984C6BF418d0 <drive type unknown>
+          /scsi_vhci/ssd@g600a0b800048ddc2000007984c6bf418
+      15. c3t60002AC00000000000000C6A000087FEd0 <3PARdata-VV-3131 cyl 65533 alt 2 hd 8 sec 400>
+          /scsi_vhci/ssd@g60002ac00000000000000c6a000087fe
+      16. c3t60002AC00000000000000C6B000087FEd0 <3PARdata-VV-3131 cyl 43113 alt 2 hd 8 sec 304>
+          /scsi_vhci/ssd@g60002ac00000000000000c6b000087fe
+      17. c3t60002AC00000000000000C6C000087FEd0 <3PARdata-VV-3131 cyl 65533 alt 2 hd 8 sec 400>
+          /scsi_vhci/ssd@g60002ac00000000000000c6c000087fe
+      18. c3t60002AC00000000000000C6D000087FEd0 <3PARdata-VV-3131 cyl 65533 alt 2 hd 8 sec 320>
+          /scsi_vhci/ssd@g60002ac00000000000000c6d000087fe
+      19. c3t60002AC00000000000000C6E000087FEd0 <3PARdata-VV-3131 cyl 43113 alt 2 hd 8 sec 304>
+          /scsi_vhci/ssd@g60002ac00000000000000c6e000087fe
+      20. c3t60002AC00000000000000C6F000087FEd0 <3PARdata-VV-3131 cyl 4309 alt 2 hd 8 sec 304>
+          /scsi_vhci/ssd@g60002ac00000000000000c6f000087fe
+      21. c3t60002AC00000000000000C70000087FEd0 <3PARdata-VV-3131 cyl 65533 alt 2 hd 8 sec 400>
+          /scsi_vhci/ssd@g60002ac00000000000000c70000087fe
+
+==================================================================================================================================================================
+
+iostat -En .out
+
+c0t1d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Serial No: 0822963B9H 
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 3 Predictive Failure Analysis: 0 
+c0t0d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: HITACHI  Product: H101414SCSUN146G Revision: SA25 Serial No: 0835ETW0PA 
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c1t3d31          Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: SUN      Product: Universal Xport  Revision: 0760 Serial No: SG83943524      
+Size: 0.02GB <20971520 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 1 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DD06000008EC4C6C0264d0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC2000007B54C6C0145d0 Soft Errors: 0 Hard Errors: 4 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 4 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC2000007B14C6BFFE4d0 Soft Errors: 0 Hard Errors: 4 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 85.90GB <85899345920 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 4 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC2000007984C6BF418d0 Soft Errors: 0 Hard Errors: 276 Transport Errors: 2 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 5 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DD06000008B24C6BF4DDd0 Soft Errors: 0 Hard Errors: 272 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DD06000008AD4C6BF39Bd0 Soft Errors: 0 Hard Errors: 272 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+c2t4d31          Soft Errors: 0 Hard Errors: 3 Transport Errors: 0 
+Vendor: SUN      Product: Universal Xport  Revision: 0760 Serial No: SG84122668      
+Size: 0.02GB <20971520 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 3 Recoverable: 0 
+Illegal Request: 1 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC2000009D752013D55d0 Soft Errors: 0 Hard Errors: 274 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 3 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC2000009DB52013D99d0 Soft Errors: 0 Hard Errors: 258 Transport Errors: 1 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 3 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC200000ABE559B70C2d0 Soft Errors: 0 Hard Errors: 273 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 5.37GB <5368709120 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 2 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC200000AC855CC54ACd0 Soft Errors: 0 Hard Errors: 3 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 32.21GB <32212254720 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 3 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+
+c3t600A0B800048DDC200000ACA55CC571Dd0 Soft Errors: 0 Hard Errors: 3 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 32.21GB <32212254720 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 3 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+
+c3t60002AC00000000000000C6A000087FEd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c3t60002AC00000000000000C6B000087FEd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c3t60002AC00000000000000C6C000087FEd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c3t60002AC00000000000000C6D000087FEd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 85.90GB <85899345920 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c3t60002AC00000000000000C6E000087FEd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c3t60002AC00000000000000C6F000087FEd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 5.37GB <5368709120 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c3t60002AC00000000000000C70000087FEd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+
+==================================================================================================================================================================
+
+iostat -E .out
+
+
+sd0       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Serial No: 0822963B9H 
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 4 Predictive Failure Analysis: 0 
+sd1       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: HITACHI  Product: H101414SCSUN146G Revision: SA25 Serial No: 0835ETW0PA 
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd3      Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: SUN      Product: Universal Xport  Revision: 0760 Serial No: SG83943524      
+Size: 0.02GB <20971520 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 1 Predictive Failure Analysis: 0 
+ssd4      Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd5      Soft Errors: 0 Hard Errors: 5 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 5 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+ssd6      Soft Errors: 0 Hard Errors: 5 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 85.90GB <85899345920 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 5 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+ssd7      Soft Errors: 0 Hard Errors: 301 Transport Errors: 2 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 6 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd8      Soft Errors: 0 Hard Errors: 296 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd9      Soft Errors: 0 Hard Errors: 296 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd10     Soft Errors: 0 Hard Errors: 4 Transport Errors: 0 
+Vendor: SUN      Product: Universal Xport  Revision: 0760 Serial No: SG84122668      
+Size: 0.02GB <20971520 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 4 Recoverable: 0 
+Illegal Request: 1 Predictive Failure Analysis: 0 
+ssd11     Soft Errors: 0 Hard Errors: 299 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 4 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd12     Soft Errors: 0 Hard Errors: 283 Transport Errors: 1 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 4 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd13     Soft Errors: 0 Hard Errors: 298 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 5.37GB <5368709120 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 3 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd14     Soft Errors: 0 Hard Errors: 4 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 32.21GB <32212254720 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 4 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+ssd15     Soft Errors: 0 Hard Errors: 4 Transport Errors: 0 
+Vendor: SUN      Product: CSM200_R         Revision: 0760 Serial No: SG83943524      
+Size: 32.21GB <32212254720 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 4 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+ssd16     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd17     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd18     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd19     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 85.90GB <85899345920 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd20     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 53.69GB <53687091200 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd21     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 5.37GB <5368709120 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+ssd22     Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1634814 
+Size: 107.37GB <107374182400 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+
+
+==================================================================================================================================================================
+
+df -kl.out
+
+Filesystem            kbytes    used   avail capacity  Mounted on
+/dev/md/dsk/d100     30987261 25352742 5324647    83%    /
+/devices                   0       0       0     0%    /devices
+ctfs                       0       0       0     0%    /system/contract
+proc                       0       0       0     0%    /proc
+mnttab                     0       0       0     0%    /etc/mnttab
+swap                 80877680    1784 80875896     1%    /etc/svc/volatile
+objfs                      0       0       0     0%    /system/object
+sharefs                    0       0       0     0%    /etc/dfs/sharetab
+fd                         0       0       0     0%    /dev/fd
+/dev/md/dsk/d50      15493250 9009563 6328755    59%    /var
+swap                 80876520     624 80875896     1%    /tmp
+swap                 80876000     104 80875896     1%    /var/run
+swap                 80875896       0 80875896     0%    /dev/vx/dmp
+swap                 80875896       0 80875896     0%    /dev/vx/rdmp
+/dev/dsk/c3t600A0B800048DDC200000AC855CC54ACd0s0 30974950   30737 30634464     1%    /LiveUpgrade_EOS
+/dev/dsk/c3t600A0B800048DDC200000ACA55CC571Dd0s0 30974950   30737 30634464     1%    /LiveUpgrade_SART
+/dev/md/dsk/d4       33232461 3222817 29677320    10%    /home
+/dev/md/dsk/d6       12396483   12305 12260214     1%    /home/oraclei
+
+==================================================================================================================================================================
+==================================================================================================================================================================
+
+showhostname -a .out
+
+xscf#0:rscsg02.movistar.net
+
+
+==================================================================================================================================================================
+
+
+
+showdomainstatus -a .out 
+
+DID         Domain Status
+00          Running
+01          Running
+02          -
+03          -
+
+==================================================================================================================================================================
+
+showboars -va .out
+
+XSB  R DID(LSB) Assignment  Pwr  Conn Conf Test    Fault    COD 
+---- - -------- ----------- ---- ---- ---- ------- -------- ----
+00-0   00(00)   Assigned    y    y    y    Passed  Normal   n   
+01-0   01(00)   Assigned    y    y    y    Passed  Normal   n   
+
+==================================================================================================================================================================
+
+showhardconf -u .out
+
+
+SPARC Enterprise M5000; Memory_Size:128 GB;
+    +-----------------------------------+------------+
+    |              FRU                  |  Quantity  |
+    +-----------------------------------+------------+
+    | MBU_B                             |       1    |
+    |     Type:1;                       |   (   1)   |
+    |     CPUM                          |       4    |
+    |         Freq:2.400 GHz;           |   (   8)   |
+    |     MEMB                          |       6    |
+    |         MEM                       |      48    |
+    |             Type:2B; Size:2 GB;   |   (  32)   |
+    |             Type:4B; Size:4 GB;   |   (  16)   |
+    |     DDC_A                         |       4    |
+    |     DDC_B                         |       2    |
+    | IOU                               |       2    |
+    |     Type:1;                       |   (   2)   |
+    |     DDC_A                         |       2    |
+    |     DDCR                          |       2    |
+    |         DDC_B                     |       2    |
+    | XSCFU                             |       1    |
+    | OPNL                              |       1    |
+    | PSU                               |       4    |
+    | FANBP_C                           |       1    |
+    |     FAN_A                         |       4    |
+    +-----------------------------------+------------+
+
+
+==================================================================================================================================================================
+
+showhardconf .out
+
+
+SPARC Enterprise M5000;
+    + Serial:BEF0843067; Operator_Panel_Switch:Locked;
+    + Power_Supply_System:Single; SCF-ID:XSCF#0;
+    + System_Power:On; System_Phase:Cabinet Power On;
+    Domain#0 Domain_Status:Running;
+    Domain#1 Domain_Status:Running;
+
+    MBU_B Status:Normal; Ver:0201h; Serial:BE08411AE7  ;
+        + FRU-Part-Number:CF00541-0478 07   /541-0478-07          ;
+        + Memory_Size:128 GB;
+        + Type:1;
+        CPUM#0-CHIP#0 Status:Normal; Ver:0401h; Serial:PP083402LM  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        CPUM#0-CHIP#1 Status:Normal; Ver:0401h; Serial:PP083402LM  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        CPUM#1-CHIP#0 Status:Normal; Ver:0401h; Serial:PP083504XF  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        CPUM#1-CHIP#1 Status:Normal; Ver:0401h; Serial:PP083504XF  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        CPUM#2-CHIP#0 Status:Normal; Ver:0401h; Serial:PP083504X1  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        CPUM#2-CHIP#1 Status:Normal; Ver:0401h; Serial:PP083504X1  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        CPUM#3-CHIP#0 Status:Normal; Ver:0401h; Serial:PP083504WZ  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        CPUM#3-CHIP#1 Status:Normal; Ver:0401h; Serial:PP083504WZ  ;
+            + FRU-Part-Number:CA06761-D202 C0   /375-3568-03          ;
+            + Freq:2.400 GHz; Type:32;
+            + Core:4; Strand:2;
+        MEMB#0 Status:Normal; Ver:0101h; Serial:NN1306GW79  ;
+            + FRU-Part-Number:CF00541-4593 01   /541-4593-01          ;
+            MEM#0A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c46b;
+                + Type:4B; Size:4 GB;
+            MEM#0B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c4d6;
+                + Type:4B; Size:4 GB;
+            MEM#1A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c4d1;
+                + Type:4B; Size:4 GB;
+            MEM#1B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c4ce;
+                + Type:4B; Size:4 GB;
+            MEM#2A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c4b0;
+                + Type:4B; Size:4 GB;
+            MEM#2B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c4e1;
+                + Type:4B; Size:4 GB;
+            MEM#3A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c500;
+                + Type:4B; Size:4 GB;
+            MEM#3B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-2346c55f;
+                + Type:4B; Size:4 GB;
+        MEMB#1 Status:Normal; Ver:0101h; Serial:NN1302GE68  ;
+            + FRU-Part-Number:CF00541-4593 01   /541-4593-01          ;
+            MEM#0A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-234759c5;
+                + Type:4B; Size:4 GB;
+            MEM#0B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-234759ca;
+                + Type:4B; Size:4 GB;
+            MEM#1A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-234759c3;
+                + Type:4B; Size:4 GB;
+            MEM#1B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-234759b4;
+                + Type:4B; Size:4 GB;
+            MEM#2A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-234759c4;
+                + Type:4B; Size:4 GB;
+            MEM#2B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-234759c8;
+                + Type:4B; Size:4 GB;
+            MEM#3A Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-23475a1b;
+                + Type:4B; Size:4 GB;
+            MEM#3B Status:Normal;
+                + Code:ce0000000000000001M3 93T5160FBA-CE6 4146-234759fe;
+                + Type:4B; Size:4 GB;
+        MEMB#4 Status:Normal; Ver:0101h; Serial:BF0840L0W9  ;
+            + FRU-Part-Number:CF00541-0545 06   /541-0545-06          ;
+            MEM#0A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea21;
+                + Type:2B; Size:2 GB;
+            MEM#0B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea64;
+                + Type:2B; Size:2 GB;
+            MEM#1A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea1b;
+                + Type:2B; Size:2 GB;
+            MEM#1B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea1d;
+                + Type:2B; Size:2 GB;
+            MEM#2A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ceb8f;
+                + Type:2B; Size:2 GB;
+            MEM#2B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cebc8;
+                + Type:2B; Size:2 GB;
+            MEM#3A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea59;
+                + Type:2B; Size:2 GB;
+            MEM#3B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce9c0;
+                + Type:2B; Size:2 GB;
+        MEMB#5 Status:Normal; Ver:0101h; Serial:BF0840KXWD  ;
+            + FRU-Part-Number:CF00541-0545 06   /541-0545-06          ;
+            MEM#0A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce57e;
+                + Type:2B; Size:2 GB;
+            MEM#0B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce51a;
+                + Type:2B; Size:2 GB;
+            MEM#1A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce519;
+                + Type:2B; Size:2 GB;
+            MEM#1B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce51b;
+                + Type:2B; Size:2 GB;
+            MEM#2A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce9d7;
+                + Type:2B; Size:2 GB;
+            MEM#2B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce9d9;
+                + Type:2B; Size:2 GB;
+            MEM#3A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce9d2;
+                + Type:2B; Size:2 GB;
+            MEM#3B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce97a;
+                + Type:2B; Size:2 GB;
+        MEMB#6 Status:Normal; Ver:0101h; Serial:BF0840KVTC  ;
+            + FRU-Part-Number:CF00541-0545 06   /541-0545-06          ;
+            MEM#0A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea1c;
+                + Type:2B; Size:2 GB;
+            MEM#0B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea20;
+                + Type:2B; Size:2 GB;
+            MEM#1A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea25;
+                + Type:2B; Size:2 GB;
+            MEM#1B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea26;
+                + Type:2B; Size:2 GB;
+            MEM#2A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea1f;
+                + Type:2B; Size:2 GB;
+            MEM#2B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea6f;
+                + Type:2B; Size:2 GB;
+            MEM#3A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea22;
+                + Type:2B; Size:2 GB;
+            MEM#3B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea23;
+                + Type:2B; Size:2 GB;
+        MEMB#7 Status:Normal; Ver:0101h; Serial:BF0840L0VP  ;
+            + FRU-Part-Number:CF00541-0545 06   /541-0545-06          ;
+            MEM#0A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea31;
+                + Type:2B; Size:2 GB;
+            MEM#0B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea2e;
+                + Type:2B; Size:2 GB;
+            MEM#1A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce9f3;
+                + Type:2B; Size:2 GB;
+            MEM#1B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea2f;
+                + Type:2B; Size:2 GB;
+            MEM#2A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475ce9fb;
+                + Type:2B; Size:2 GB;
+            MEM#2B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea24;
+                + Type:2B; Size:2 GB;
+            MEM#3A Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea27;
+                + Type:2B; Size:2 GB;
+            MEM#3B Status:Normal;
+                + Code:ce0000000000000001M3 93T5750EZA-CE6 4145-475cea2a;
+                + Type:2B; Size:2 GB;
+        DDC_A#0 Status:Normal;
+        DDC_A#1 Status:Normal;
+        DDC_A#2 Status:Normal;
+        DDC_A#3 Status:Normal;
+        DDC_B#0 Status:Normal;
+        DDC_B#1 Status:Normal;
+    IOU#0 Status:Normal; Ver:0101h; Serial:BF0829FQXU  ;
+        + FRU-Part-Number:CF00541-2240 03   /541-2240-03          ;
+        + Type:1;
+        DDC_A#0 Status:Normal;
+        DDCR Status:Normal;
+            DDC_B#0 Status:Normal;
+        PCI#2 Name_Property:network; Card_Type:Other;
+        PCI#3 Name_Property:SUNW,qlc; Card_Type:Other;
+        PCI#4 Name_Property:SUNW,qlc; Card_Type:Other;
+    IOU#1 Status:Normal; Ver:0101h; Serial:BF0837JTH4  ;
+        + FRU-Part-Number:CF00541-2240 03   /541-2240-03          ;
+        + Type:1;
+        DDC_A#0 Status:Normal;
+        DDCR Status:Normal;
+            DDC_B#0 Status:Normal;
+        PCI#1 Name_Property:SUNW,emlxs; Card_Type:Other;
+        PCI#2 Name_Property:network; Card_Type:Other;
+        PCI#4 Name_Property:SUNW,qlc; Card_Type:Other;
+    XSCFU Status:Normal,Active; Ver:0101h; Serial:NN11528MF6  ;
+        + FRU-Part-Number:CF00541-0481 05   /541-0481-05          ;
+    OPNL Status:Normal; Ver:0101h; Serial:BF0826EVAN  ;
+        + FRU-Part-Number:CF00541-0850 06   /541-0850-06          ;
+    PSU#0 Status:Normal; Serial:0017527-0830012472;
+        + FRU-Part-Number:CF00300-2011 0150 /300-2011-01-50;
+        + Power_Status:On; AC:200 V;
+    PSU#1 Status:Normal; Serial:0017527-0830012464;
+        + FRU-Part-Number:CF00300-2011 0150 /300-2011-01-50;
+        + Power_Status:On; AC:200 V;
+    PSU#2 Status:Normal; Serial:0017527-0830012471;
+        + FRU-Part-Number:CF00300-2011 0150 /300-2011-01-50;
+        + Power_Status:On; AC:200 V;
+    PSU#3 Status:Normal; Serial:0017527-0830012460;
+        + FRU-Part-Number:CF00300-2011 0150 /300-2011-01-50;
+        + Power_Status:On; AC:200 V;
+    FANBP_C Status:Normal; Ver:0301h; Serial:BF0837JMN3  ;
+        + FRU-Part-Number:CF00541-0848 05   /541-0848-05          ;
+        FAN_A#0 Status:Normal;
+        FAN_A#1 Status:Normal;
+        FAN_A#2 Status:Normal;
+        FAN_A#3 Status:Normal;
+
+
+==================================================================================================================================================================
+
+fmadm faulty.out 
+
+   STATE RESOURCE / UUID
+-------- ----------------------------------------------------------------------
+
+
+
+==================================================================================================================================================================
+
+

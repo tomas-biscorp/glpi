@@ -1,0 +1,11 @@
+2020-12-30 11:22:54 [6@GLPI-TCSVZLA]
+0 segundos for "create database schema" @ 2020-12-30 11:22:54 [6@GLPI-TCSVZLA]
+0 segundos for "Configure existing entities" @ 2020-12-30 11:22:54 [6@GLPI-TCSVZLA]
+0 segundos for "create request type" @ 2020-12-30 11:22:54 [6@GLPI-TCSVZLA]
+0 segundos for "create default display preferences" @ 2020-12-30 11:22:54 [6@GLPI-TCSVZLA]
+0 segundos for "Migración de datos - glpi_displaypreferences" @ 2021-05-24 12:41:16 [16@soporte.tcs.com.ve]
+1 segundo for "create database schema" @ 2021-05-24 12:41:16 [16@soporte.tcs.com.ve]
+0 segundos for "Configure existing entities" @ 2021-05-24 12:41:16 [16@soporte.tcs.com.ve]
+0 segundos for "create request type" @ 2021-05-24 12:41:16 [16@soporte.tcs.com.ve]
+0 segundos for "create default display preferences" @ 2021-05-24 12:41:16 [16@soporte.tcs.com.ve]
+0 segundos for "Migración de datos - glpi_displaypreferences" @ 

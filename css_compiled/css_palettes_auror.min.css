@@ -1,0 +1,68 @@
+#firstboxlogin {
+    background-color: #004b84;
+}
+#logo_login {
+    background: #d6dfea;
+}
+#display-login {
+    color: #fff;
+}
+#text-login {
+    background-color: #6b3440;
+    color: #fff;
+}
+a,
+.btn-linkstyled {
+    color: #3a5693;
+}
+a:link,
+.btn-linkstyled:link {
+    color: #3a5693;
+}
+.ui-widget-content a {
+    color: #3a5693;
+}
+.main_form tr.headerRow th {
+    color: #8cabdb;
+}
+#header_top {
+    background-color: #acbcd5;
+}
+#c_preference a,
+#language_link > span {
+    color: #004b84;
+}
+#c_recherche form #champRecherche input {
+    background-color: #fff;
+    color: #c7dbf5;
+}
+#c_menu {
+    background-color: #e5e9f1;
+}
+ul#menu a.itemP,
+ul#menu a.itemP1 {
+    color: #004b84;
+}
+ul#menu > li.active {
+    background-color: #8cabdb;
+}
+ul.ssmenu li.active {
+    background-color: #8cabdb;
+}
+ul#menu > li:hover {
+    background-color: #8baada;
+}
+ul#menu ul li a {
+    color: #131425;
+}
+ul#menu ul li a:hover {
+    background: #6b3440;
+    color: #fff;
+}
+#c_recherche form #champRecherche button {
+    background-color: white;
+}
+a.vsubmit,
+.vsubmit a {
+    color: #004b84;
+}

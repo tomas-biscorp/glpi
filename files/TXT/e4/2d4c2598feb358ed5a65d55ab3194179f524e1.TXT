@@ -1,0 +1,1350 @@
+[root@tca106]> 
+[root@tca106]> 
+[root@tca106]> iostat -en
+  ---- errors --- 
+  s/w h/w trn tot device
+    0   0   0   0 md/d1
+    0   0   0   0 md/d3
+    0   0   0   0 md/d7
+    0   0   0   0 md/d12
+    0   0   0   0 md/d20
+    0   0   0   0 md/d21
+    0   0   0   0 md/d23
+    0   0   0   0 md/d40
+    0   0   0   0 md/d41
+    0   0   0   0 md/d43
+    0   0   0   0 c0t0d0
+    0   0 384 384 c0t1d0
+    0   0   0   0 c1t0d0
+    0   0   0   0 c0t3d0
+    0   0   0   0 c6t60002AC0000000000000000900012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000D00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000C00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000A00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000B00012C6Cd0
+    0   0   0   0 tca106:vold(pid806)
+[root@tca106]> [root@tca106]> 
+[root@tca106]> 
+[root@tca106]> prtdiag   
+System Configuration:  Oracle Corporation  sun4v T5440
+Memory size: 130784 Megabytes
+
+================================ Virtual CPUs ================================
+
+
+CPU ID Frequency Implementation         Status
+------ --------- ---------------------- -------
+0      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+1      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+2      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+3      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+4      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+5      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+6      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+7      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+8      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+9      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+10     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+11     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+12     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+13     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+14     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+15     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+16     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+17     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+18     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+19     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+20     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+21     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+22     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+23     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+24     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+25     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+26     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+27     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+28     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+29     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+30     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+31     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+32     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+33     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+34     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+35     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+36     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+37     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+38     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+39     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+40     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+41     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+42     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+43     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+44     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+45     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+46     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+47     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+48     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+49     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+50     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+51     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+52     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+53     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+54     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+55     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+56     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+57     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+58     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+59     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+60     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+61     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+62     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+63     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+64     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+65     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+66     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+67     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+68     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+69     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+70     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+71     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+72     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+73     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+74     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+75     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+76     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+77     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+78     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+79     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+80     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+81     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+82     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+83     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+84     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+85     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+86     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+87     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+88     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+89     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+90     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+91     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+92     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+93     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+94     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+95     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+96     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+97     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+98     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+99     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+100    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+101    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+102    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+103    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+104    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+105    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+106    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+107    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+108    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+109    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+110    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+111    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+112    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+113    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+114    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+115    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+116    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+117    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+118    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+119    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+120    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+121    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+122    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+123    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+124    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+125    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+126    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+127    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+128    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+129    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+130    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+131    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+132    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+133    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+134    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+135    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+136    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+137    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+138    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+139    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+140    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+141    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+142    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+143    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+144    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+145    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+146    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+147    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+148    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+149    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+150    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+151    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+152    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+153    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+154    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+155    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+156    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+157    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+158    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+159    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+160    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+161    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+162    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+163    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+164    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+165    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+166    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+167    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+168    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+169    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+170    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+171    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+172    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+173    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+174    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+175    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+176    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+177    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+178    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+179    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+180    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+181    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+182    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+183    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+184    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+185    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+186    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+187    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+188    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+189    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+190    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+191    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+192    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+193    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+194    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+195    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+196    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+197    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+198    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+199    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+200    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+201    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+202    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+203    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+204    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+205    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+206    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+207    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+208    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+209    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+210    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+211    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+212    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+213    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+214    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+215    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+216    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+217    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+218    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+219    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+220    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+221    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+222    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+223    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+224    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+225    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+226    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+227    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+228    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+229    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+230    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+231    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+232    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+233    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+234    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+235    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+236    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+237    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+238    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+239    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+240    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+241    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+242    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+243    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+244    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+245    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+246    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+247    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+248    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+249    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+250    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+251    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+252    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+253    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+254    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+255    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+
+======================= Physical Memory Configuration ========================
+Segment Table:
+--------------------------------------------------------------
+Base           Segment  Interleave   Bank     Contains
+Address        Size     Factor       Size     Modules
+--------------------------------------------------------------
+0x0            128 GB   8            16 GB    MB/CPU0/CMP0/BR0/CH0/D0
+                                              MB/CPU0/CMP0/BR0/CH1/D0
+                                     16 GB    MB/CPU0/CMP0/BR1/CH0/D0
+                                              MB/CPU0/CMP0/BR1/CH1/D0
+                                     16 GB    MB/CPU1/CMP1/BR0/CH0/D0
+                                              MB/CPU1/CMP1/BR0/CH1/D0
+                                     16 GB    MB/CPU1/CMP1/BR1/CH0/D0
+                                              MB/CPU1/CMP1/BR1/CH1/D0
+                                     16 GB    MB/CPU2/CMP2/BR0/CH0/D0
+                                              MB/CPU2/CMP2/BR0/CH1/D0
+                                     16 GB    MB/CPU2/CMP2/BR1/CH0/D0
+                                              MB/CPU2/CMP2/BR1/CH1/D0
+                                     16 GB    MB/CPU3/CMP3/BR0/CH0/D0
+                                              MB/CPU3/CMP3/BR0/CH1/D0
+                                     16 GB    MB/CPU3/CMP3/BR1/CH0/D0
+                                              MB/CPU3/CMP3/BR1/CH1/D0
+
+
+================================= IO Devices =================================
+Slot +            Bus   Name +                            Model        Speed 
+Status            Type  Path                                                 
+------------------------------------------------------------------------------
+MB/HBA            PCIE  scsi-pciex1000,58                 LSI,1068E    2.5GTx8
+                        /pci@400/pci@0/pci@1/scsi@0                 
+MB/PCIE1          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@400/pci@0/pci@c/SUNW,emlxs@0           
+MB/PCIE1          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@400/pci@0/pci@c/SUNW,emlxs@0,1         
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0              
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0,1            
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0,2            
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0,3            
+MB/PCIE5          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@500/pci@0/pci@9/SUNW,emlxs@0           
+MB/PCIE5          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@500/pci@0/pci@9/SUNW,emlxs@0,1         
+MB/NET0           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0              
+MB/NET1           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0,1            
+MB/NET2           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0,2            
+MB/NET3           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0,3            
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0              
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0,1            
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0,2            
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0,3            
+MB/PCIE2          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@600/pci@0/pci@c/network@0              
+MB/PCIE2          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@600/pci@0/pci@c/network@0,1            
+MB/PCIE2          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@600/pci@0/pci@c/ethernet               
+MB/PCIE2          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@600/pci@0/pci@c/ethernet               
+MB/PCIE6          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@700/pci@0/pci@c/network@0              
+MB/PCIE6          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@700/pci@0/pci@c/network@0,1            
+MB/PCIE6          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@700/pci@0/pci@c/ethernet               
+MB/PCIE6          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@700/pci@0/pci@c/ethernet               
+MB                PCIX  usb-pciclass,0c0310                            --
+                        /pci@400/pci@0/pci@9/pci@0/usb@0            
+MB                PCIX  usb-pciclass,0c0310                            --
+                        /pci@400/pci@0/pci@9/pci@0/usb@0,1          
+MB                PCIX  usb-pciclass,0c0320                            --
+                        /pci@400/pci@0/pci@9/pci@0/usb@0,2          
+
+============================ Environmental Status ============================
+Fan sensors:
+All fan sensors are OK.
+
+Fan indicators:
+All fan indicators are OK.
+
+Temperature sensors:
+All temperature sensors are OK.
+
+Temperature indicators:
+All temperature indicators are OK.
+
+Current sensors:
+All current sensors are OK.
+
+Current indicators:
+All current indicators are OK.
+
+Voltage sensors:
+All voltage sensors are OK.
+
+Voltage indicators:
+All voltage indicators are OK.
+
+============================ FRU Status ============================
+All FRUs are enabled.
+[root@tca106]> prtdiag -v
+System Configuration:  Oracle Corporation  sun4v T5440
+Memory size: 130784 Megabytes
+
+================================ Virtual CPUs ================================
+
+
+CPU ID Frequency Implementation         Status
+------ --------- ---------------------- -------
+0      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+1      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+2      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+3      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+4      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+5      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+6      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+7      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+8      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+9      1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+10     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+11     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+12     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+13     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+14     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+15     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+16     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+17     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+18     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+19     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+20     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+21     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+22     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+23     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+24     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+25     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+26     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+27     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+28     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+29     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+30     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+31     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+32     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+33     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+34     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+35     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+36     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+37     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+38     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+39     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+40     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+41     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+42     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+43     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+44     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+45     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+46     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+47     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+48     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+49     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+50     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+51     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+52     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+53     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+54     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+55     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+56     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+57     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+58     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+59     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+60     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+61     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+62     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+63     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+64     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+65     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+66     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+67     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+68     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+69     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+70     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+71     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+72     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+73     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+74     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+75     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+76     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+77     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+78     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+79     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+80     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+81     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+82     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+83     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+84     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+85     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+86     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+87     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+88     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+89     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+90     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+91     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+92     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+93     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+94     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+95     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+96     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+97     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+98     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+99     1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+100    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+101    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+102    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+103    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+104    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+105    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+106    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+107    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+108    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+109    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+110    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+111    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+112    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+113    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+114    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+115    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+116    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+117    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+118    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+119    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+120    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+121    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+122    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+123    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+124    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+125    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+126    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+127    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+128    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+129    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+130    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+131    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+132    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+133    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+134    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+135    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+136    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+137    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+138    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+139    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+140    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+141    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+142    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+143    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+144    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+145    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+146    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+147    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+148    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+149    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+150    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+151    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+152    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+153    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+154    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+155    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+156    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+157    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+158    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+159    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+160    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+161    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+162    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+163    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+164    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+165    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+166    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+167    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+168    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+169    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+170    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+171    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+172    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+173    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+174    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+175    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+176    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+177    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+178    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+179    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+180    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+181    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+182    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+183    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+184    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+185    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+186    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+187    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+188    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+189    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+190    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+191    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+192    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+193    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+194    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+195    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+196    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+197    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+198    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+199    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+200    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+201    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+202    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+203    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+204    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+205    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+206    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+207    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+208    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+209    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+210    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+211    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+212    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+213    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+214    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+215    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+216    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+217    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+218    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+219    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+220    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+221    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+222    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+223    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+224    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+225    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+226    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+227    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+228    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+229    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+230    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+231    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+232    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+233    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+234    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+235    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+236    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+237    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+238    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+239    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+240    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+241    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+242    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+243    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+244    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+245    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+246    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+247    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+248    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+249    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+250    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+251    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+252    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+253    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+254    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+255    1580 MHz  SUNW,UltraSPARC-T2+    on-line  
+
+======================= Physical Memory Configuration ========================
+Segment Table:
+--------------------------------------------------------------
+Base           Segment  Interleave   Bank     Contains
+Address        Size     Factor       Size     Modules
+--------------------------------------------------------------
+0x0            128 GB   8            16 GB    MB/CPU0/CMP0/BR0/CH0/D0
+                                              MB/CPU0/CMP0/BR0/CH1/D0
+                                     16 GB    MB/CPU0/CMP0/BR1/CH0/D0
+                                              MB/CPU0/CMP0/BR1/CH1/D0
+                                     16 GB    MB/CPU1/CMP1/BR0/CH0/D0
+                                              MB/CPU1/CMP1/BR0/CH1/D0
+                                     16 GB    MB/CPU1/CMP1/BR1/CH0/D0
+                                              MB/CPU1/CMP1/BR1/CH1/D0
+                                     16 GB    MB/CPU2/CMP2/BR0/CH0/D0
+                                              MB/CPU2/CMP2/BR0/CH1/D0
+                                     16 GB    MB/CPU2/CMP2/BR1/CH0/D0
+                                              MB/CPU2/CMP2/BR1/CH1/D0
+                                     16 GB    MB/CPU3/CMP3/BR0/CH0/D0
+                                              MB/CPU3/CMP3/BR0/CH1/D0
+                                     16 GB    MB/CPU3/CMP3/BR1/CH0/D0
+                                              MB/CPU3/CMP3/BR1/CH1/D0
+
+
+================================= IO Devices =================================
+Slot +            Bus   Name +                            Model        Speed 
+Status            Type  Path                                                 
+------------------------------------------------------------------------------
+MB/HBA            PCIE  scsi-pciex1000,58                 LSI,1068E    2.5GTx8
+                        /pci@400/pci@0/pci@1/scsi@0                 
+MB/PCIE1          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@400/pci@0/pci@c/SUNW,emlxs@0           
+MB/PCIE1          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@400/pci@0/pci@c/SUNW,emlxs@0,1         
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0              
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0,1            
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0,2            
+MB/PCIE0          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@400/pci@0/pci@d/network@0,3            
+MB/PCIE5          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@500/pci@0/pci@9/SUNW,emlxs@0           
+MB/PCIE5          PCIE  SUNW,emlxs-pciex10df,fc20         LPe11002-S   2.5GTx4
+                        /pci@500/pci@0/pci@9/SUNW,emlxs@0,1         
+MB/NET0           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0              
+MB/NET1           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0,1            
+MB/NET2           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0,2            
+MB/NET3           PCIE  network-pciex108e,abcd            SUNW,pcie-neptune  2.5GTx8
+                        /pci@500/pci@0/pci@c/network@0,3            
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0              
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0,1            
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0,2            
+MB/PCIE4          PCIE  network-pciex108e,abcd            SUNW,pcie-qgc  2.5GTx8
+                        /pci@500/pci@0/pci@d/network@0,3            
+MB/PCIE2          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@600/pci@0/pci@c/network@0              
+MB/PCIE2          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@600/pci@0/pci@c/network@0,1            
+MB/PCIE2          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@600/pci@0/pci@c/ethernet               
+MB/PCIE2          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@600/pci@0/pci@c/ethernet               
+MB/PCIE6          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@700/pci@0/pci@c/network@0              
+MB/PCIE6          PCIE  network-pciex108e,abcd            SUNW,pcie-2xgf  2.5GTx8
+                        /pci@700/pci@0/pci@c/network@0,1            
+MB/PCIE6          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@700/pci@0/pci@c/ethernet               
+MB/PCIE6          PCIE  ethernet                                       2.5GTx8
+disabled                /pci@700/pci@0/pci@c/ethernet               
+MB                PCIX  usb-pciclass,0c0310                            --
+                        /pci@400/pci@0/pci@9/pci@0/usb@0            
+MB                PCIX  usb-pciclass,0c0310                            --
+                        /pci@400/pci@0/pci@9/pci@0/usb@0,1          
+MB                PCIX  usb-pciclass,0c0320                            --
+                        /pci@400/pci@0/pci@9/pci@0/usb@0,2          
+
+============================ Environmental Status ============================
+Fan sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status    
+----------------------------------------------------------------
+SYS/MB/FT0                         TACH               ok
+SYS/MB/FT1                         TACH               ok
+SYS/MB/FT2                         TACH               ok
+SYS/MB/FT3                         TACH               ok
+
+Fan indicators:
+----------------------------------------------------------------
+Location                           Sensor             Condition 
+----------------------------------------------------------------
+SYS/PS0                            FAN_FAULT          ok      
+SYS/PS1                            FAN_FAULT          ok      
+SYS/PS2                            FAN_FAULT          ok      
+SYS/PS3                            FAN_FAULT          ok      
+
+Temperature sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status    
+----------------------------------------------------------------
+SYS/MB                             T_MB2              ok
+SYS/MB/CPU0                        T_CPU_INLET        ok
+SYS/MB/CPU0                        T_VF_TOP           ok
+SYS/MB/CPU1                        T_CPU_INLET        ok
+SYS/MB/CPU1                        T_VF_TOP           ok
+SYS/MB/CPU2                        T_CPU_INLET        ok
+SYS/MB/CPU2                        T_VF_TOP           ok
+SYS/MB/CPU3                        T_CPU_INLET        ok
+SYS/MB/CPU3                        T_VF_TOP           ok
+SYS                                T_AMB              ok
+
+Temperature indicators:
+----------------------------------------------------------------
+Location                           Indicator          Condition
+----------------------------------------------------------------
+SYS/PS0                            TEMP_FAULT         ok      
+SYS/PS1                            TEMP_FAULT         ok      
+SYS/PS2                            TEMP_FAULT         ok      
+SYS/PS3                            TEMP_FAULT         ok      
+
+Current sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status    
+----------------------------------------------------------------
+SYS/MB/CPU0/DVRM_CORE              I_+1V1             ok
+SYS/MB/CPU1/DVRM_CORE              I_+1V1             ok
+SYS/MB/CPU2/DVRM_CORE              I_+1V1             ok
+SYS/MB/CPU3/DVRM_CORE              I_+1V1             ok
+SYS/PS0                            I_+12V             ok
+SYS/PS0                            I_AC               ok
+SYS/PS0                            I_AC_LIMIT         ok
+SYS/PS0                            I_DC_LIMIT         ok
+SYS/PS1                            I_+12V             ok
+SYS/PS1                            I_AC               ok
+SYS/PS1                            I_AC_LIMIT         ok
+SYS/PS1                            I_DC_LIMIT         ok
+SYS/PS2                            I_+12V             ok
+SYS/PS2                            I_AC               ok
+SYS/PS2                            I_AC_LIMIT         ok
+SYS/PS2                            I_DC_LIMIT         ok
+SYS/PS3                            I_+12V             ok
+SYS/PS3                            I_AC               ok
+SYS/PS3                            I_AC_LIMIT         ok
+SYS/PS3                            I_DC_LIMIT         ok
+
+Current indicators:
+----------------------------------------------------------------
+Location                           Indicator          Condition
+----------------------------------------------------------------
+SYS/PS0                            CUR_FAULT          ok      
+SYS/PS1                            CUR_FAULT          ok      
+SYS/PS2                            CUR_FAULT          ok      
+SYS/PS3                            CUR_FAULT          ok      
+
+Voltage sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status    
+----------------------------------------------------------------
+SYS/MB/SP                          V_+3V3STBY         ok
+SYS/MB/SP                          V_+3V3REG          ok
+SYS/MB/DVRM_PLX                    V_+1V0             ok
+SYS/MB/DVRM_ZAM23                  V_+1V1             ok
+SYS/MB/DVRM_ZAM01                  V_+1V1             ok
+SYS/MB/DVRM_ZAMP                   V_+1V5             ok
+SYS/MB/DVRM_33                     V_+3V3             ok
+SYS/MB                             V_+12V             ok
+SYS/MB                             V_PHY+2V5          ok
+SYS/MB                             V_NEP+1V2          ok
+SYS/MB                             V_MAIN+3V3         ok
+SYS/MB/CPU0/DVRM_CORE              V_+1V1             ok
+SYS/MB/CPU0/DVRM_FBD               V_+1V8             ok
+SYS/MB/CPU0/DVRM_15                V_+1V5             ok
+SYS/MB/CPU1/DVRM_CORE              V_+1V1             ok
+SYS/MB/CPU1/DVRM_FBD               V_+1V8             ok
+SYS/MB/CPU1/DVRM_15                V_+1V5             ok
+SYS/MB/CPU2/DVRM_CORE              V_+1V1             ok
+SYS/MB/CPU2/DVRM_FBD               V_+1V8             ok
+SYS/MB/CPU2/DVRM_15                V_+1V5             ok
+SYS/MB/CPU3/DVRM_CORE              V_+1V1             ok
+SYS/MB/CPU3/DVRM_FBD               V_+1V8             ok
+SYS/MB/CPU3/DVRM_15                V_+1V5             ok
+SYS/MB/MEM0/DVRM_15                V_+1V5             ok
+SYS/MB/MEM0/DVRM_FBD               V_+1V8             ok
+SYS/MB/MEM1/DVRM_15                V_+1V5             ok
+SYS/MB/MEM1/DVRM_FBD               V_+1V8             ok
+SYS/MB/MEM2/DVRM_15                V_+1V5             ok
+SYS/MB/MEM2/DVRM_FBD               V_+1V8             ok
+SYS/MB/MEM3/DVRM_15                V_+1V5             ok
+SYS/MB/MEM3/DVRM_FBD               V_+1V8             ok
+SYS/PS0                            V_+12V             ok
+SYS/PS0                            V_AC               ok
+SYS/PS1                            V_+12V             ok
+SYS/PS1                            V_AC               ok
+SYS/PS2                            V_+12V             ok
+SYS/PS2                            V_AC               ok
+SYS/PS3                            V_+12V             ok
+SYS/PS3                            V_AC               ok
+
+Voltage indicators:
+----------------------------------------------------------------
+Location                           Indicator          Condition
+----------------------------------------------------------------
+SYS/MB/SP                          V_+3VBATT          ok      
+SYS/PS0                            AC_POK             ok      
+SYS/PS0                            DC_POK             ok      
+SYS/PS0                            VOLT_FAULT         ok      
+SYS/PS1                            AC_POK             ok      
+SYS/PS1                            DC_POK             ok      
+SYS/PS1                            VOLT_FAULT         ok      
+SYS/PS2                            AC_POK             ok      
+SYS/PS2                            DC_POK             ok      
+SYS/PS2                            VOLT_FAULT         ok      
+SYS/PS3                            AC_POK             ok      
+SYS/PS3                            DC_POK             ok      
+SYS/PS3                            VOLT_FAULT         ok      
+
+LEDs:
+----------------------------------------------------------------
+Location                           LED                State   
+----------------------------------------------------------------
+SYS                                SERVICE            steady  
+SYS                                LOCATE             off     
+SYS                                ACT                steady  
+SYS                                PS_FAULT           off     
+SYS                                TEMP_FAULT         off     
+SYS                                FAN_FAULT          off     
+SYS/MB/CPU0/CMP0/BR0/CH0/D0        SERVICE            off     
+SYS/MB/CPU0/CMP0/BR0/CH1/D0        SERVICE            off     
+SYS/MB/CPU0/CMP0/BR1/CH0/D0        SERVICE            off     
+SYS/MB/CPU0/CMP0/BR1/CH1/D0        SERVICE            off     
+SYS/MB/CPU0                        SERVICE            steady  
+SYS/MB/CPU1/CMP1/BR0/CH0/D0        SERVICE            off     
+SYS/MB/CPU1/CMP1/BR0/CH1/D0        SERVICE            off     
+SYS/MB/CPU1/CMP1/BR1/CH0/D0        SERVICE            off     
+SYS/MB/CPU1/CMP1/BR1/CH1/D0        SERVICE            off     
+SYS/MB/CPU1                        SERVICE            off     
+SYS/MB/CPU2/CMP2/BR0/CH0/D0        SERVICE            off     
+SYS/MB/CPU2/CMP2/BR0/CH1/D0        SERVICE            off     
+SYS/MB/CPU2/CMP2/BR1/CH0/D0        SERVICE            off     
+SYS/MB/CPU2/CMP2/BR1/CH1/D0        SERVICE            off     
+SYS/MB/CPU2                        SERVICE            off     
+SYS/MB/CPU3/CMP3/BR0/CH0/D0        SERVICE            off     
+SYS/MB/CPU3/CMP3/BR0/CH1/D0        SERVICE            off     
+SYS/MB/CPU3/CMP3/BR1/CH0/D0        SERVICE            off     
+SYS/MB/CPU3/CMP3/BR1/CH1/D0        SERVICE            off     
+SYS/MB/CPU3                        SERVICE            off     
+SYS/MB/MEM0                        SERVICE            off     
+SYS/MB/MEM1                        SERVICE            off     
+SYS/MB/MEM2                        SERVICE            off     
+SYS/MB/MEM3                        SERVICE            off     
+SYS/MB/FT0                         SERVICE            off     
+SYS/MB/FT1                         SERVICE            off     
+SYS/MB/FT2                         SERVICE            off     
+SYS/MB/FT3                         SERVICE            off     
+SYS/HDD0                           SERVICE            off     
+SYS/HDD0                           OK2RM              off     
+SYS/HDD1                           SERVICE            off     
+SYS/HDD1                           OK2RM              off     
+SYS/HDD2                           SERVICE            off     
+SYS/HDD2                           OK2RM              off     
+SYS/HDD3                           SERVICE            off     
+SYS/HDD3                           OK2RM              off     
+
+============================ FRU Status ============================
+Location                           Name      Status  
+------------------------------------------------------
+SYS                                MB        enabled  
+SYS/MB                             SP        enabled  
+SYS/MB                             SCC_NVRAM enabled  
+SYS/MB                             CPU0      enabled  
+SYS/MB/CPU0/CMP0/BR0/CH0           D0        enabled  
+SYS/MB/CPU0/CMP0/BR0/CH1           D0        enabled  
+SYS/MB/CPU0/CMP0/BR1/CH0           D0        enabled  
+SYS/MB/CPU0/CMP0/BR1/CH1           D0        enabled  
+SYS/MB                             CPU1      enabled  
+SYS/MB/CPU1/CMP1/BR0/CH0           D0        enabled  
+SYS/MB/CPU1/CMP1/BR0/CH1           D0        enabled  
+SYS/MB/CPU1/CMP1/BR1/CH0           D0        enabled  
+SYS/MB/CPU1/CMP1/BR1/CH1           D0        enabled  
+SYS/MB                             CPU2      enabled  
+SYS/MB/CPU2/CMP2/BR0/CH0           D0        enabled  
+SYS/MB/CPU2/CMP2/BR0/CH1           D0        enabled  
+SYS/MB/CPU2/CMP2/BR1/CH0           D0        enabled  
+SYS/MB/CPU2/CMP2/BR1/CH1           D0        enabled  
+SYS/MB                             CPU3      enabled  
+SYS/MB/CPU3/CMP3/BR0/CH0           D0        enabled  
+SYS/MB/CPU3/CMP3/BR0/CH1           D0        enabled  
+SYS/MB/CPU3/CMP3/BR1/CH0           D0        enabled  
+SYS/MB/CPU3/CMP3/BR1/CH1           D0        enabled  
+SYS/MB                             MEM0      enabled  
+SYS/MB                             MEM1      enabled  
+SYS/MB                             MEM2      enabled  
+SYS/MB                             MEM3      enabled  
+SYS/MB                             FT0       enabled  
+SYS/MB                             FT1       enabled  
+SYS/MB                             FT2       enabled  
+SYS/MB                             FT3       enabled  
+SYS                                HDD0      enabled  
+SYS                                HDD1      enabled  
+SYS                                HDD2      enabled  
+SYS                                HDD3      enabled  
+SYS                                DVD       enabled  
+SYS                                USBBD     enabled  
+SYS                                PS0       enabled  
+SYS                                PS1       enabled  
+SYS                                PS2       enabled  
+SYS                                PS3       enabled  
+
+============================ FW Version ============================
+Version
+------------------------------------------------------------
+ Sun System Firmware 7.4.10.a 2016/03/11 07:45
+
+
+====================== System PROM revisions =======================
+Version
+------------------------------------------------------------
+OBP 4.33.6.g 2016/03/11 06:06
+
+Chassis Serial Number
+---------------------
+BDL104547D
+[root@tca106]> metastat -c
+d12              m   40GB d40
+    d40          s   40GB c0t1d0s0
+d3               m   47GB d23 (maint) d43 (maint)
+    d23          s   47GB c0t0d0s3
+    d43          s   47GB c0t1d0s3
+d7               m   40GB d20
+    d20          s   40GB c0t0d0s0
+d1               m  192GB d21 (maint) d41 (maint)
+    d21          s  192GB c0t0d0s1
+    d41          s  192GB c0t1d0s1
+[root@tca106]> iostat -en
+  ---- errors --- 
+  s/w h/w trn tot device
+    0   0   0   0 md/d1
+    0   0   0   0 md/d3
+    0   0   0   0 md/d7
+    0   0   0   0 md/d12
+    0   0   0   0 md/d20
+    0   0   0   0 md/d21
+    0   0   0   0 md/d23
+    0   0   0   0 md/d40
+    0   0   0   0 md/d41
+    0   0   0   0 md/d43
+    0   0   0   0 c0t0d0
+    0   0 386 386 c0t1d0
+    0   0   0   0 c1t0d0
+    0   0   0   0 c0t3d0
+    0   0   0   0 c6t60002AC0000000000000000900012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000D00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000C00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000A00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000B00012C6Cd0
+    0   0   0   0 tca106:vold(pid806)
+[root@tca106]> df -h
+Filesystem             size   used  avail capacity  Mounted on
+/dev/md/dsk/d12         39G    16G    23G    43%    /
+/devices                 0K     0K     0K     0%    /devices
+ctfs                     0K     0K     0K     0%    /system/contract
+proc                     0K     0K     0K     0%    /proc
+mnttab                   0K     0K     0K     0%    /etc/mnttab
+swap                   298G   1.7M   298G     1%    /etc/svc/volatile
+objfs                    0K     0K     0K     0%    /system/object
+sharefs                  0K     0K     0K     0%    /etc/dfs/sharetab
+/platform/SUNW,T5440/lib/libc_psr/libc_psr_hwcap2.so.1
+                        39G    16G    23G    43%    /platform/sun4v/lib/libc_psr.so.1
+/platform/SUNW,T5440/lib/sparcv9/libc_psr/libc_psr_hwcap2.so.1
+                        39G    16G    23G    43%    /platform/sun4v/lib/sparcv9/libc_psr.so.1
+fd                       0K     0K     0K     0%    /dev/fd
+swap                   298G    80K   298G     1%    /tmp
+swap                   298G    40K   298G     1%    /var/run
+/dev/dsk/c6t60002AC0000000000000000900012C6Cd0s6
+                       9.8G   4.5G   5.3G    46%    /bea
+/dev/dsk/c6t60002AC0000000000000000C00012C6Cd0s6
+                       251G   115G   133G    47%    /logs
+/dev/dsk/c6t60002AC0000000000000000A00012C6Cd0s6
+                       188G    76G   110G    42%    /colas
+/dev/dsk/c6t60002AC0000000000000000B00012C6Cd0s6
+                       262G   186G    74G    72%    /data
+/dev/dsk/c6t60002AC0000000000000000D00012C6Cd0s6
+                        84G    31G    52G    38%    /home
+/dev/md/dsk/d3          47G    30G    16G    66%    /var/crash
+[root@tca106]> showrev
+Hostname: tca106
+Hostid: 84a000be
+Release: 5.10
+Kernel architecture: sun4v
+Application architecture: sparc
+Hardware provider: Oracle Corporation
+Domain: 
+Kernel version: SunOS 5.10 Generic_150400-69
+[root@tca106]> lustatus 
+Oct 21 08:42:25 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 21 08:42:25 tca106  mpt_cmd_timeout: Restarting HBA
+
+Serial console stopped.
+
+-> 
+-> 
+-> show faulty      
+Target              | Property               | Value                           
+--------------------+------------------------+---------------------------------
+/SP/faultmgmt/0     | fru                    | /SYS/MB/CPU0                    
+/SP/faultmgmt/0/    | sunw-msg-id            | PCIEX-8000-6D                   
+ faults/0           |                        |                                 
+/SP/faultmgmt/0/    | uuid                   | 20b1a27f-83b9-4e3f-aa4e-e3c1a870
+ faults/0           |                        | 3782                            
+/SP/faultmgmt/0/    | timestamp              | Oct 21 08:30:49                 
+ faults/0           |                        |                                 
+/SP/faultmgmt/1     | fru                    | /SYS/MB                         
+/SP/faultmgmt/1/    | sunw-msg-id            | PCIEX-8000-6D                   
+ faults/0           |                        |                                 
+/SP/faultmgmt/1/    | uuid                   | 20b1a27f-83b9-4e3f-aa4e-e3c1a870
+ faults/0           |                        | 3782                            
+/SP/faultmgmt/1/    | timestamp              | Oct 21 08:30:49                 
+ faults/0           |                        |                                 
+
+-> 
+-> 
+-> 
+-> start /SP/console
+Are you sure you want to start /SP/console (y/n)? n
+Command aborted.
+
+-> start /SP/faultmgmt/shell
+Are you sure you want to start /SP/faultmgmt/shell (y/n)? y
+
+faultmgmtsp> 
+faultmgmtsp> 
+faultmgmtsp> fmadm faulty
+   STATE RESOURCE / UUID
+-------- ----------------------------------------------------------------------
+faultmgmtsp> 
+faultmgmtsp> 
+faultmgmtsp> exit
+-> start /SP/console        
+Are you sure you want to start /SP/console (y/n)? y
+
+Serial console started.  To stop, type #.
+
+
+
+Serial console stopped.
+
+-> 
+-> start /SP/console -f
+Are you sure you want to start /SP/console (y/n)? y
+
+Serial console started.  To stop, type #.
+
+
+
+
+^CERROR: Interrupted system call: interrupted while polling datastreams to determine if input is available
+ERROR: cannot determine next provider to process: interrupted
+ERROR: Unrecoverable error processing requests and responses
+ERROR: command interrupted by process interrupt (SIGINT) signal
+[root@tca106]> fmadm faulty
+[root@tca106]> sho
+shopt         showmount     showrev       showsnf       
+showfont      showplatform  showrgb       
+[root@tca106]> Oct 21 08:49:11 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 21 08:49:11 tca106  mpt_cmd_timeout: Restarting HBA
+Oct 21 08:52:34 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 21 08:52:34 tca106  mpt_cmd_timeout: Restarting HBA
+
+[root@tca106]> 
+[root@tca106]> iostat -en
+  ---- errors --- 
+  s/w h/w trn tot device
+    0   0   0   0 md/d1
+    0   0   0   0 md/d3
+    0   0   0   0 md/d7
+    0   0   0   0 md/d12
+    0   0   0   0 md/d20
+    0   0   0   0 md/d21
+    0   0   0   0 md/d23
+    0   0   0   0 md/d40
+    0   0   0   0 md/d41
+    0   0   0   0 md/d43
+    0   0   0   0 c0t0d0
+    0   0 445 445 c0t1d0
+    0   0   0   0 c1t0d0
+    0   0   0   0 c0t3d0
+    0   0   0   0 c6t60002AC0000000000000000900012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000D00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000C00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000A00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000B00012C6Cd0
+    0   0   0   0 tca106:vold(pid806)
+[root@tca106]> 
+Serial console stopped.
+
+-> 
+-> 
+-> show faulty
+Target              | Property               | Value                           
+--------------------+------------------------+---------------------------------
+/SP/faultmgmt/0     | fru                    | /SYS/MB/CPU0                    
+/SP/faultmgmt/0/    | sunw-msg-id            | PCIEX-8000-6D                   
+ faults/0           |                        |                                 
+/SP/faultmgmt/0/    | uuid                   | 20b1a27f-83b9-4e3f-aa4e-e3c1a870
+ faults/0           |                        | 3782                            
+/SP/faultmgmt/0/    | timestamp              | Oct 21 08:30:49                 
+ faults/0           |                        |                                 
+/SP/faultmgmt/1     | fru                    | /SYS/MB                         
+/SP/faultmgmt/1/    | sunw-msg-id            | PCIEX-8000-6D                   
+ faults/0           |                        |                                 
+/SP/faultmgmt/1/    | uuid                   | 20b1a27f-83b9-4e3f-aa4e-e3c1a870
+ faults/0           |                        | 3782                            
+/SP/faultmgmt/1/    | timestamp              | Oct 21 08:30:49                 
+ faults/0           |                        |                                 
+
+-> set /SYS/
+set: Invalid command syntax
+Usage: set [target] <property>=<value> [<property>=<value>...]
+
+-> 
+-> set /SYS/MB/CPU0 clear_fault_action=true
+Are you sure you want to clear /SYS/MB/CPU0 (y/n)? y
+Set 'clear_fault_action' to 'true'
+
+-> show faulty                             
+Target              | Property               | Value                           
+--------------------+------------------------+---------------------------------
+
+-> 
+-> 
+-> 
+-> 
+-> 
+-> 
+-> show faulty                             
+Target              | Property               | Value                           
+--------------------+------------------------+---------------------------------
+
+-> 
+-> 
+-> 
+-> start /SP/console -f                    
+Are you sure you want to start /SP/console (y/n)? y
+
+Serial console started.  To stop, type #.
+
+[root@tca106]> 
+[root@tca106]> 
+[root@tca106]> 
+[root@tca106]> 
+[root@tca106]> iostat -en
+  ---- errors --- 
+  s/w h/w trn tot device
+    0   0   0   0 md/d1
+    0   0   0   0 md/d3
+    0   0   0   0 md/d7
+    0   0   0   0 md/d12
+    0   0   0   0 md/d20
+    0   0   0   0 md/d21
+    0   0   0   0 md/d23
+    0   0   0   0 md/d40
+    0   0   0   0 md/d41
+    0   0   0   0 md/d43
+    0   0   0   0 c0t0d0
+    0   0 458 458 c0t1d0
+    0   0   0   0 c1t0d0
+    0   0   0   0 c0t3d0
+    0   0   0   0 c6t60002AC0000000000000000900012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000D00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000C00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000A00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000B00012C6Cd0
+    0   0   0   0 tca106:vold(pid806)
+[root@tca106]> lustatus 
+Oct 21 09:08:56 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 21 09:08:56 tca106  mpt_cmd_timeout: Restarting HBA
+
+Oct 21 09:12:19 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 21 09:12:19 tca106  mpt_cmd_timeout: Restarting HBA
+
+^CERROR: Interrupted system call: interrupted while polling datastreams to determine if input is available
+ERROR: cannot determine next provider to process: interrupted
+ERROR: Unrecoverable error processing requests and responses
+ERROR: command interrupted by process interrupt (SIGINT) signal
+[root@tca106]> iostat -En
+c0t0d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: HITACHI  Product: H103030SCSUN300G Revision: A2A8 Serial No: 1036GDLXWE 
+Size: 300.00GB <300000000000 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c0t1d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 462 
+Vendor: HITACHI  Product: H103030SCSUN300G Revision: A2A8 Serial No: 1036GDEZ8E 
+Size: 300.00GB <300000000000 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c1t0d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: TEAC     Product: DV-W28SLC        Revision: 1.0C Serial No:  
+Size: 0.00GB <0 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+c0t3d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Serial No: 09249950Y0 
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 2 Predictive Failure Analysis: 0 
+c6t60002AC0000000000000000900012C6Cd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1676908 
+Size: 10.74GB <10737418240 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c6t60002AC0000000000000000D00012C6Cd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1676908 
+Size: 91.27GB <91268055040 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c6t60002AC0000000000000000C00012C6Cd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1676908 
+Size: 273.80GB <273804165120 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c6t60002AC0000000000000000A00012C6Cd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1676908 
+Size: 205.08GB <205084688384 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+c6t60002AC0000000000000000B00012C6Cd0 Soft Errors: 0 Hard Errors: 0 Transport Errors: 0 
+Vendor: 3PARdata Product: VV               Revision: 3226 Serial No: 1676908 
+Size: 285.62GB <285615325184 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+Illegal Request: 0 Predictive Failure Analysis: 0 
+[root@tca106]> 
+[root@tca106]> 
+[root@tca106]> 
+[root@tca106]> df -h
+Filesystem             size   used  avail capacity  Mounted on
+/dev/md/dsk/d12         39G    16G    23G    43%    /
+/devices                 0K     0K     0K     0%    /devices
+ctfs                     0K     0K     0K     0%    /system/contract
+proc                     0K     0K     0K     0%    /proc
+mnttab                   0K     0K     0K     0%    /etc/mnttab
+swap                   298G   1.7M   298G     1%    /etc/svc/volatile
+objfs                    0K     0K     0K     0%    /system/object
+sharefs                  0K     0K     0K     0%    /etc/dfs/sharetab
+/platform/SUNW,T5440/lib/libc_psr/libc_psr_hwcap2.so.1
+                        39G    16G    23G    43%    /platform/sun4v/lib/libc_psr.so.1
+/platform/SUNW,T5440/lib/sparcv9/libc_psr/libc_psr_hwcap2.so.1
+                        39G    16G    23G    43%    /platform/sun4v/lib/sparcv9/libc_psr.so.1
+fd                       0K     0K     0K     0%    /dev/fd
+swap                   298G    80K   298G     1%    /tmp
+swap                   298G    40K   298G     1%    /var/run
+/dev/dsk/c6t60002AC0000000000000000900012C6Cd0s6
+                       9.8G   4.5G   5.3G    46%    /bea
+/dev/dsk/c6t60002AC0000000000000000C00012C6Cd0s6
+                       251G   115G   133G    47%    /logs
+/dev/dsk/c6t60002AC0000000000000000A00012C6Cd0s6
+                       188G    76G   110G    42%    /colas
+/dev/dsk/c6t60002AC0000000000000000B00012C6Cd0s6
+                       262G   186G    74G    72%    /data
+/dev/dsk/c6t60002AC0000000000000000D00012C6Cd0s6
+                        84G    31G    52G    38%    /home
+/dev/md/dsk/d3          47G    30G    16G    66%    /var/crash
+[root@tca106]> showrev
+Hostname: tca106
+Hostid: 84a000be
+Release: 5.10
+Kernel architecture: sun4v
+Application architecture: sparc
+Hardware provider: Oracle Corporation
+Domain: 
+Kernel version: SunOS 5.10 Generic_150400-69
+[root@tca106]>

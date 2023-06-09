@@ -1,0 +1,17 @@
+[root@sc01-cel03 ~]# cellcli -e list celldisk attributes name,status where disktype=flashdisk
+	 FD_00_sc01_cel03	 normal
+	 FD_01_sc01_cel03	 normal
+	 FD_02_sc01_cel03	 normal
+	 FD_03_sc01_cel03	 normal
+	 FD_04_sc01_cel03	 proactive failure
+	 FD_05_sc01_cel03	 proactive failure
+	 FD_06_sc01_cel03	 proactive failure
+	 FD_07_sc01_cel03	 proactive failure
+	 FD_08_sc01_cel03	 normal
+	 FD_09_sc01_cel03	 normal
+	 FD_10_sc01_cel03	 normal
+	 FD_11_sc01_cel03	 normal
+	 FD_12_sc01_cel03	 normal
+	 FD_13_sc01_cel03	 normal
+	 FD_14_sc01_cel03	 normal
+	 FD_15_sc01_cel03	 normal

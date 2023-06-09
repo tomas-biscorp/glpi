@@ -1,0 +1,307 @@
+tca075-SC> showenvironment
+
+
+=============== Environmental Status ===============
+
+
+--------------------------------------------------------------------------------
+System Temperatures (Temperatures in Celsius):
+--------------------------------------------------------------------------------
+Sensor         Status    Temp LowHard LowSoft LowWarn HighWarn HighSoft HighHard
+--------------------------------------------------------------------------------
+C0.P0.T_CORE    OK         83    -20     -10       0      97      102      120
+C1.P0.T_CORE    OK         81    -20     -10       0      97      102      120
+C2.P0.T_CORE    OK         49    -20     -10       0      97      102      120
+C3.P0.T_CORE    OK         45    -20     -10       0      97      102      120
+C0.T_AMB        OK         47    -20     -10       0      60       65       75
+C1.T_AMB        OK         41    -20     -10       0      60       65       75
+C2.T_AMB        OK         30    -20     -10       0      60       65       75
+C3.T_AMB        OK         26    -20     -10       0      60       65       75
+SCSIBP.T_AMB    OK         32    -19     -11       0      47       52       62
+MB.T_AMB        OK         42    -18     -10       0      65       75       85
+
+--------------------------------------
+Front Status Panel:
+--------------------------------------
+Keyswitch position: NORMAL
+
+---------------------------------------------------
+System Indicator Status:
+---------------------------------------------------
+SYS.LOCATE           SYS.SERVICE          SYS.ACT
+--------------------------------------------------------
+OFF                  ON                   ON
+
+--------------------------------------------
+System Disks:
+--------------------------------------------
+Disk   Status            Service  OK2RM
+--------------------------------------------
+HDD0   OK                OFF      OFF
+HDD1   OK                OFF      OFF
+HDD2   OK                OFF      OFF
+HDD3   OK                OFF      OFF
+
+----------------------------------------------------------
+Fans (Speeds Revolution Per Minute):
+----------------------------------------------------------
+Sensor           Status           Speed   Warn    Low
+----------------------------------------------------------
+FT0.F0.TACH      OK                3770   2400    750
+FT1.F0.TACH      OK                3879   2400    750
+FT1.F1.TACH      OK                3901   2400    750
+
+--------------------------------------------------------------------------------
+Voltage sensors (in Volts):
+--------------------------------------------------------------------------------
+Sensor         Status       Voltage LowSoft LowWarn HighWarn HighSoft
+--------------------------------------------------------------------------------
+MB.V_+1V5      OK             1.48    1.20    1.27    1.72     1.80
+MB.V_VCCTM     OK             2.51    2.00    2.12    2.87     3.00
+MB.V_NET0_1V2D OK             1.25    0.96    1.02    1.38     1.44
+MB.V_NET1_1V2D OK             1.24    0.96    1.02    1.38     1.44
+MB.V_NET0_1V2A OK             1.24    0.96    1.02    1.38     1.44
+MB.V_NET1_1V2A OK             1.24    0.96    1.02    1.38     1.44
+MB.V_+3V3      OK             3.34    2.64    2.80    3.79     3.96
+MB.V_+3V3STBY  OK             3.31    2.64    2.80    3.79     3.96
+MB.BAT.V_BAT   OK             3.04      --    2.25      --       --
+MB.V_SCSI_CORE OK             1.80    1.44    1.53    2.07     2.16
+MB.V_+5V       OK             5.02    4.00    4.25    5.75     6.00
+MB.V_+12V      OK            12.06    9.60   10.20   13.80    14.40
+MB.V_-12V      OK           -11.75  -14.40  -13.80  -10.20    -9.60
+
+-------------------------------------------------
+Power Supply Indicators:
+-------------------------------------------------
+Supply    POK      STBY   Service   OK-to-Remove
+-------------------------------------------------
+PS0       OFF      ON     ON        OFF
+PS1       ON       ON     OFF       OFF
+
+---------------------
+Power Supplies:
+---------------------
+Supply  Status
+---------------------
+PS0     FAILED
+PS1     OK
+
+----------------------
+Current sensors:
+----------------------
+Sensor          Status
+----------------------
+MB.FF_SCSIA      OK
+MB.FF_SCSIB      OK
+MB.FF_POK        OK
+C0.P0.FF_POK     OK
+C1.P0.FF_POK     OK
+C2.P0.FF_POK     OK
+C3.P0.FF_POK     OK
+
+tca075-SC> showlogs
+
+Log entries since JUN 09 10:02:24
+----------------------------------
+JUN 09 10:02:24 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 10:17:35 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 10:32:36 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 10:47:40 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 11:02:53 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 11:18:00 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 11:33:05 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 11:48:08 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 12:03:15 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 12:18:27 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 12:33:36 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 12:48:41 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 13:03:52 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 13:19:02 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 13:34:07 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 13:49:13 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 14:04:22 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 14:19:25 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 14:34:36 tca075: 00040066: "PSU @ PS0 has FAILED."
+JUN 09 14:39:45 tca075: 00060000: "SC Login: User admin Logged on."
+tca075-SC> showsc -v
+Advanced Lights Out Manager v1.5.2
+
+parameter                value
+---------                -----
+if_network               true
+if_modem                 false
+if_emailalerts           false
+sys_autorestart          xir
+sys_bootrestart          none
+sys_bootfailrecovery     none
+sys_maxbootfail          3
+sys_xirtimeout           900
+sys_boottimeout          120
+sys_wdttimeout           60
+netsc_tpelinktest        true
+netsc_dhcp               false
+netsc_ipaddr             10.161.22.71
+netsc_ipnetmask          255.255.255.0
+netsc_ipgateway          10.161.22.254
+mgt_mailhost
+mgt_mailalert
+sc_customerinfo
+sc_escapechars           #.
+sc_powerondelay          false
+sc_powerstatememory      false
+sc_clipasswdecho         true
+sc_cliprompt             tca075-SC
+sc_clitimeout            0
+sc_clieventlevel         2
+sc_backupuserdata        true
+sys_eventlevel           2
+ser_baudrate             9600
+ser_parity               none
+ser_stopbits             1
+ser_data                 8
+netsc_enetaddr           00:03:ba:9d:60:96
+sys_hostname             tca075
+sys_enetaddr             00:03:ba:9d:60:8d
+tca075-SC>
+tca075-SC> showdate
+THU JUN 09 14:42:27 UTC 2022
+tca075-SC> showfru
+FRU_PROM at PS0.SEEPROM
+  Manufacturer Record
+  Timestamp: MON MAR 07 09:28:31 UTC 2011
+  Description: P/S,SSI MPS,680W,HOT PLUG,RoHS
+  Manufacture Location: DELTA ELECTRONICS THAILAND
+  Sun Part No: 3001851
+  Sun Serial No: T10447
+  Vendor: Delta Electronics
+  Initial HW Dash Level: 02
+  Initial HW Rev Level: 50
+  Shortname: A42_PSU
+
+FRU_PROM at MB.SEEPROM
+  Manufacturer Record
+  Timestamp: FRI DEC 24 10:21:24 UTC 2004
+  Description: ASSY,A42,MOTHERBOARD
+  Manufacture Location: Sriracha,Chonburi,Thailand
+  Sun Part No: 5016910
+  Sun Serial No: 006491
+  Vendor: Celestica
+  Initial HW Dash Level: 01
+  Initial HW Rev Level: 50
+  Shortname: A42_MB
+
+FRU_PROM at PS1.SEEPROM
+  Manufacturer Record
+  Timestamp: THU FEB 16 04:45:39 UTC 2012
+  Description: P/S,SSI MPS,680W,HOT PLUG,RoHS
+  Manufacture Location: DELTA ELECTRONICS THAILAND
+  Sun Part No: 3001851
+  Sun Serial No: T16171
+  Vendor: Delta Electronics
+  Initial HW Dash Level: 02
+  Initial HW Rev Level: 50
+  Shortname: A42_PSU
+
+FRU_PROM at SC.SEEPROM
+  Manufacturer Record
+  Timestamp: MON APR 17 05:15:26 UTC 2006
+  Description: ASSY,ALOM Card
+  Manufacture Location: Sriracha,Chonburi,Thailand
+  Sun Part No: 5016346
+  Sun Serial No: 128860
+  Vendor: Celestica
+  Initial HW Dash Level: 08
+  Initial HW Rev Level: 50
+  Shortname: ALOM_Card
+
+FRU_PROM at SCSIBP.SEEPROM
+  Manufacturer Record
+  Timestamp: FRI OCT 22 04:51:41 UTC 2004
+  Description: ASSY,A42,4 DRV SCSI BKPLN
+  Manufacture Location: Sriracha, Chonburi, Thailand
+  Sun Part No: 5016335
+  Sun Serial No: 042805
+  Vendor: Celestica
+  Initial HW Dash Level: 04
+  Initial HW Rev Level: 50
+  Shortname: A42_SCSI_BP
+
+FRU_PROM at C0.SEEPROM
+  Manufacturer Record
+  Timestamp: SAT NOV 20 05:26:33 UTC 2004
+  Description: ASSY,A42,1.280GHZ,0MB,CPU BD
+  Manufacture Location: Toronto, Ontario, Canada
+  Sun Part No: 5016370
+  Sun Serial No: 080036
+  Vendor: Celestica
+  Initial HW Dash Level: 04
+  Initial HW Rev Level: 51
+  Shortname: A42_CPU_1.280GHZZ
+
+FRU_PROM at C1.SEEPROM
+  Manufacturer Record
+  Timestamp: SAT NOV 20 05:25:38 UTC 2004
+  Description: ASSY,A42,1.280GHZ,0MB,CPU BD
+  Manufacture Location: Toronto, Ontario, Canada
+  Sun Part No: 5016370
+  Sun Serial No: 080009
+  Vendor: Celestica
+  Initial HW Dash Level: 04
+  Initial HW Rev Level: 51
+  Shortname: A42_CPU_1.280GHZZ
+
+FRU_PROM at C2.SEEPROM
+  Manufacturer Record
+  Timestamp: SAT NOV 20 05:27:20 UTC 2004
+  Description: ASSY,A42,1.280GHZ,0MB,CPU BD
+  Manufacture Location: Toronto, Ontario, Canada
+  Sun Part No: 5016370
+  Sun Serial No: 080109
+  Vendor: Celestica
+  Initial HW Dash Level: 04
+  Initial HW Rev Level: 51
+  Shortname: A42_CPU_1.280GHZZ
+
+FRU_PROM at C3.SEEPROM
+  Manufacturer Record
+  Timestamp: SAT NOV 20 05:43:13 UTC 2004
+  Description: ASSY,A42,1.280GHZ,0MB,CPU BD
+  Manufacture Location: Toronto, Ontario, Canada
+  Sun Part No: 5016370
+  Sun Serial No: 080017
+  Vendor: Celestica
+  Initial HW Dash Level: 04
+  Initial HW Rev Level: 51
+  Shortname: A42_CPU_1.280GHZZ
+
+FRU_PROM at C0.P0.B0.D0.SEEPROM
+  Timestamp: MON DEC 27 12:00:00 UTC 2004
+  Description: SDRAM DDR, 512 MB
+  Manufacture Location:
+  Vendor: Samsung
+  Vendor Part No: M3 12L6420ETS-CA2
+
+FRU_PROM at C0.P0.B0.D1.SEEPROM
+  Timestamp: MON DEC 27 12:00:00 UTC 2004
+  Description: SDRAM DDR, 512 MB
+  Manufacture Location:
+  Vendor: Samsung
+  Vendor Part No: M3 12L6420ETS-CA2
+
+FRU_PROM at C0.P0.B1.D0.SEEPROM
+  Timestamp: MON DEC 27 12:00:00 UTC 2004
+  Description: SDRAM DDR, 512 MB
+  Manufacture Location:
+  Vendor: Samsung
+  Vendor Part No: M3 12L6420ETS-CA2
+
+FRU_PROM at C0.P0.B1.D1.SEEPROM
+  Timestamp: MON DEC 27 12:00:00 UTC 2004
+  Description: SDRAM DDR, 512 MB
+  Manufacture Location:
+  Vendor: Samsung
+  Vendor Part No: M3 12L6420ETS-CA2
+
+FRU_PROM at C1.P0.B0.D0.SEEPROM
+
+SC Alert: PSU @ PS0 has FAILED.

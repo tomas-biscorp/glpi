@@ -1,0 +1,367 @@
+
+******************* TMP074 Caido 19.09.21 *************************
+
+
+
+
+
+[root@TCANP082 ~]# ssh root@10.164.14.62
+Password:
+
+Oracle(R) Integrated Lights Out Manager
+
+Version 3.2.6.4.a r110875
+
+Copyright (c) 2016, Oracle and/or its affiliates. All rights reserved.
+
+Warning: HTTPS certificate is set to factory default.
+
+Hostname: ORACLESP-1242BDY937
+
+-> show faulty
+Target                            | Property                               | Value
+----------------------------------+----------------------------------------+-----------------------------------------------------------
+/SP/faultmgmt/0                   | fru                                    | /SYS/MB
+/SP/faultmgmt/0/faults/0          | class                                  | fault.chassis.voltage.fail
+/SP/faultmgmt/0/faults/0          | sunw-msg-id                            | SPT-8000-DH
+/SP/faultmgmt/0/faults/0          | component                              | /SYS/MB
+/SP/faultmgmt/0/faults/0          | uuid                                   | d8f264f4-8315-e485-f281-f63970eed104
+/SP/faultmgmt/0/faults/0          | timestamp                              | 2021-09-19/08:51:55
+/SP/faultmgmt/0/faults/0          | fru_part_number                        | 7049060
+/SP/faultmgmt/0/faults/0          | fru_rev_level                          | 01
+/SP/faultmgmt/0/faults/0          | fru_serial_number                      | 465769T+1237TF09C8
+/SP/faultmgmt/0/faults/0          | fru_manufacturer                       | Celestica Holdings PTE LTD
+/SP/faultmgmt/0/faults/0          | fru_name                               | MB+Tray,2.85G,T4-2,L
+/SP/faultmgmt/0/faults/0          | system_component_manufacturer          | Oracle Corporation
+/SP/faultmgmt/0/faults/0          | system_component_name                  | SPARC T4-2
+/SP/faultmgmt/0/faults/0          | system_component_part_number           | 31193634+1+1
+/SP/faultmgmt/0/faults/0          | system_component_serial_number         | 1242BDY937
+/SP/faultmgmt/0/faults/0          | chassis_manufacturer                   | Oracle Corporation
+/SP/faultmgmt/0/faults/0          | chassis_name                           | SPARC T4-2
+/SP/faultmgmt/0/faults/0          | chassis_part_number                    | 31193634+1+1
+/SP/faultmgmt/0/faults/0          | chassis_serial_number                  | 1242BDY937
+/SP/faultmgmt/0/faults/0          | system_manufacturer                    | Oracle Corporation
+/SP/faultmgmt/0/faults/0          | system_name                            | SPARC T4-2
+/SP/faultmgmt/0/faults/0          | system_part_number                     | 31193634+1+1
+/SP/faultmgmt/0/faults/0          | system_serial_number                   | 1242BDY937
+/SP/faultmgmt/0/faults/0          | system_component_firmware_manufacturer | Oracle Corporation
+/SP/faultmgmt/0/faults/0          | system_component_firmware_versions     | (ILOM)3.2.6.4.a
+/SP/faultmgmt/0/faults/0          | system_component_firmware_releases     | (ILOM)2016.08.09
+
+-> start /SP/faultmgmt/shell/
+Are you sure you want to start /SP/faultmgmt/shell (y/n)? y
+
+faultmgmtsp> fmadm faulty
+------------------- ------------------------------------ -------------- --------
+Time                UUID                                 msgid          Severity
+------------------- ------------------------------------ -------------- --------
+2021-09-19/08:51:55 d8f264f4-8315-e485-f281-f63970eed104 SPT-8000-DH    Critical
+
+Fault class : fault.chassis.voltage.fail
+
+FRU         : /SYS/MB
+              (Part Number: 7049060)
+              (Serial Number: 465769T+1237TF09C8)
+
+Description : A chassis voltage supply is operating outside of the
+              allowable range.
+
+Response    : The system will be powered off. The chassis-wide service
+              required LED will be illuminated.
+
+Impact      : The system is not usable until repaired. ILOM will not allow
+              the system to be powered on until repaired.
+
+Action      : Please refer to the associated reference document at
+              http://support.oracle.com/msg/SPT-8000-DH for the latest
+              service procedures and policies regarding this diagnosis.
+
+faultmgmtsp> fmadm repair d8f264f4-8315-e485-f281-f63970eed104
+faultmgmtsp> fmadm faulty
+No problems found
+faultmgmtsp>
+faultmgmtsp> exit
+->
+->
+-> start /SYS
+Are you sure you want to start /SYS (y/n)? y
+Starting /SYS
+
+-> start /SP/console
+Are you sure you want to start /SP/console (y/n)? y
+
+Serial console started.  To stop, type #.
+
+-> show HOST/
+
+ /HOST
+    Targets:
+        bootmode
+        console
+        diag
+        domain
+        tpm
+
+    Properties:
+        autorestart = reset
+        autorunonerror = false
+        bootfailrecovery = poweroff
+        bootrestart = none
+        boottimeout = 0
+        hypervisor_version = Hypervisor 1.15.5.a 2016/08/09 15:21
+        ioreconfigure = true
+        macaddress = 00:10:e0:20:7d:4e
+        maxbootfail = 3
+        obp_version = OpenBoot 4.38.5 2016/06/22 19:34
+        post_version = POST 4.38.5 2016/06/22 19:39
+        send_break_action = (Cannot show property)
+        status = Powered Off
+        sysfw_version = Sun System Firmware 8.9.5.a 2016/08/09 15:24
+
+    Commands:
+        cd
+        set
+        show
+
+-> show SYS
+
+ /SYS
+    Targets:
+        CPU_FAULT
+        FANBD
+        FAN_FAULT
+        INTSW
+        LOCATE
+        MB
+        MB_ENV
+        MEMORY_FAULT
+        OK
+        PDB
+        PS0
+        PS1
+        PS_FAULT
+        PWRBS
+        RIO
+        SASBP
+        SERVICE
+        SP_OK
+        TEMP_FAULT
+        T_AMB
+        USBBD
+        VPS
+        VPS_CPUS
+
+    Properties:
+        type = Host System
+        ipmi_name = /SYS
+        keyswitch_state = Normal
+        product_name = SPARC T4-2
+        product_part_number = 31193634+1+1
+        product_serial_number = 1242BDY937
+        product_manufacturer = Oracle Corporation
+        fault_state = OK
+        clear_fault_action = (none)
+        power_state = Off
+
+    Commands:
+        cd
+        reset
+        set
+        show
+        start
+        stop
+
+-> show /SYS/PS0/OUTPUT_POWER
+
+ /SYS/PS0/OUTPUT_POWER
+    Targets:
+
+    Properties:
+        type = Power Unit
+        ipmi_name = PS0/OUT_POWER
+        class = Threshold Sensor
+        value = Disabled
+        upper_nonrecov_threshold = N/A
+        upper_critical_threshold = N/A
+        upper_noncritical_threshold = N/A
+        lower_noncritical_threshold = N/A
+        lower_critical_threshold = N/A
+        lower_nonrecov_threshold = N/A
+        alarm_status = indeterminate
+
+    Commands:
+        cd
+        show
+
+-> show /SYS/PS1/OUTPUT_POWER
+
+ /SYS/PS1/OUTPUT_POWER
+    Targets:
+
+    Properties:
+        type = Power Unit
+        ipmi_name = PS1/OUT_POWER
+        class = Threshold Sensor
+        value = Disabled
+        upper_nonrecov_threshold = N/A
+        upper_critical_threshold = N/A
+        upper_noncritical_threshold = N/A
+        lower_noncritical_threshold = N/A
+        lower_critical_threshold = N/A
+        lower_nonrecov_threshold = N/A
+        alarm_status = indeterminate
+
+    Commands:
+        cd
+        show
+
+-> show /SYS/MB/V_+3V3_STBY
+
+ /SYS/MB/V_+3V3_STBY
+    Targets:
+
+    Properties:
+        type = Voltage
+        ipmi_name = MB/V_+3V3_STBY
+        class = Threshold Sensor
+        value = 3.330 Volts
+        upper_nonrecov_threshold = 3.660 Volts
+        upper_critical_threshold = 3.555 Volts
+        upper_noncritical_threshold = 3.495 Volts
+        lower_noncritical_threshold = 3.195 Volts
+        lower_critical_threshold = 3.105 Volts
+        lower_nonrecov_threshold = 3.000 Volts
+        alarm_status = cleared
+
+    Commands:
+        cd
+        show
+
+-> show /SYS/PS0/INPUT_POWER
+
+ /SYS/PS0/INPUT_POWER
+    Targets:
+
+    Properties:
+        type = Power Unit
+        ipmi_name = PS0/IN_POWER
+        class = Threshold Sensor
+        value = 32.000 Watts
+        upper_nonrecov_threshold = N/A
+        upper_critical_threshold = N/A
+        upper_noncritical_threshold = N/A
+        lower_noncritical_threshold = N/A
+        lower_critical_threshold = N/A
+        lower_nonrecov_threshold = N/A
+        alarm_status = cleared
+
+    Commands:
+        cd
+        show
+
+-> set /SP/diag/snapshot dataset=normal
+Set 'dataset' to 'normal'
+
+-> set /SP/diag/snapshot dump_uri=sftp://root:redhat@10.161.22.51/root/TCS/
+Set 'dump_uri' to 'sftp://root:redhat@10.161.22.51/root/TCS/'
+
+-> show SP/diag/snapshot
+
+ /SP/diag/snapshot
+    Targets:
+
+    Properties:
+        dataset = normal
+        dump_uri = (Cannot show property)
+        encrypt_output = false
+        result = Running
+
+    Commands:
+        cd
+        set
+        show
+
+-> show SP/diag/snapshot
+
+ /SP/diag/snapshot
+    Targets:
+
+    Properties:
+        dataset = normal
+        dump_uri = (Cannot show property)
+        encrypt_output = false
+        result = Running
+
+    Commands:
+        cd
+        set
+        show
+
+-> show SP/diag/snapshot
+
+ /SP/diag/snapshot
+    Targets:
+
+    Properties:
+        dataset = normal
+        dump_uri = (Cannot show property)
+        encrypt_output = false
+        result = Collecting data into sftp://root@10.161.22.51/root/TCS//ORACLESP-1242BDY937_1242BDY937_2021-09-19T10-09-55.zip
+                 Snapshot Complete.
+                 Done.
+
+
+    Commands:
+        cd
+        set
+        show
+
+-> show SYS
+
+ /SYS
+    Targets:
+        CPU_FAULT
+        FANBD
+        FAN_FAULT
+        INTSW
+        LOCATE
+        MB
+        MB_ENV
+        MEMORY_FAULT
+        OK
+        PDB
+        PS0
+        PS1
+        PS_FAULT
+        PWRBS
+        RIO
+        SASBP
+        SERVICE
+        SP_OK
+        TEMP_FAULT
+        T_AMB
+        USBBD
+        VPS
+        VPS_CPUS
+
+    Properties:
+        type = Host System
+        ipmi_name = /SYS
+        keyswitch_state = Normal
+        product_name = SPARC T4-2
+        product_part_number = 31193634+1+1
+        product_serial_number = 1242BDY937
+        product_manufacturer = Oracle Corporation
+        fault_state = OK
+        clear_fault_action = (none)
+        power_state = Off
+
+    Commands:
+        cd
+        reset
+        set
+        show
+        start
+        stop
+
+

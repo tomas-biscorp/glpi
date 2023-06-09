@@ -1,0 +1,711 @@
+
+[root@smsiny-a]> df -h
+Filesystem             size   used  avail capacity  Mounted on
+/dev/md/dsk/d110        39G    14G    25G    36%    /
+/devices                 0K     0K     0K     0%    /devices
+ctfs                     0K     0K     0K     0%    /system/contract
+proc                     0K     0K     0K     0%    /proc
+mnttab                   0K     0K     0K     0%    /etc/mnttab
+swap                   124G   1.6M   124G     1%    /etc/svc/volatile
+objfs                    0K     0K     0K     0%    /system/object
+sharefs                  0K     0K     0K     0%    /etc/dfs/sharetab
+/platform/SUNW,Sun-Fire-T200/lib/libc_psr/libc_psr_hwcap1.so.1
+                        39G    14G    25G    36%    /platform/sun4v/lib/libc_psr                                                                                      .so.1
+/platform/SUNW,Sun-Fire-T200/lib/sparcv9/libc_psr/libc_psr_hwcap1.so.1
+                        39G    14G    25G    36%    /platform/sun4v/lib/sparcv9/                                                                                      libc_psr.so.1
+fd                       0K     0K     0K     0%    /dev/fd
+/dev/md/dsk/d220        23G    12G    11G    53%    /var
+swap                   125G   746M   124G     1%    /tmp
+swap                   124G    40K   124G     1%    /var/run
+/dev/md/dsk/d800        63G    56G   7.3G    89%    /md
+/dev/md/dsk/d300        23G    24M    23G     1%    /var/crash
+/dev/md/dsk/d700        98G   7.1G    90G     8%    /export/home
+[root@smsiny-a]> showrev
+Hostname: smsiny-a
+Hostid: 849d8d0c
+Release: 5.10
+Kernel architecture: sun4v
+Application architecture: sparc
+Hardware provider: Oracle Corporation
+Domain:
+Kernel version: SunOS 5.10 Generic_153153-01
+[root@smsiny-a]> uptime
+ 10:46pm  up 277 day(s),  4:20,  3 users,  load average: 0.10, 0.10, 0.10
+[root@smsiny-a]> metastat -c
+d220             m   23GB d202 (maint) d203
+    d202         s   23GB c0t0d0s1 (maint)
+    d203         s   23GB c0t1d0s1
+d300             m   23GB d303 d302 (maint)
+    d303         s   23GB c0t1d0s3
+    d302         s   23GB c0t0d0s3 (maint)
+d800             m   64GB d801 d802
+    d801         s   64GB c0t3d0s0
+    d802         s   64GB c0t2d0s0
+d110             m   39GB d102 (maint) d103
+    d102         s   39GB c0t0d0s0 (maint)
+    d103         s   39GB c0t1d0s0
+d900             m   72GB d901 d902
+    d901         s   72GB c0t3d0s1
+    d902         s   72GB c0t2d0s1
+d700             s  100GB c0t0d0s4 c0t1d0s4
+
+[root@smsiny-a]> ifconfig -a
+lo0: flags=2001000849<UP,LOOPBACK,RUNNING,MULTICAST,IPv4,VIRTUAL> mtu 8232 index                                                                                       1
+        inet 127.0.0.1 netmask ff000000
+e1000g0: flags=1000843<UP,BROADCAST,RUNNING,MULTICAST,IPv4> mtu 1500 index 2
+        inet 10.161.2.108 netmask ffffff00 broadcast 10.161.2.255
+        ether 0:14:4f:9d:8d:c
+e1000g1: flags=1000843<UP,BROADCAST,RUNNING,MULTICAST,IPv4> mtu 1500 index 3
+        inet 10.161.105.105 netmask ffffff00 broadcast 10.161.105.255
+        ether 0:14:4f:9d:8d:d
+e1000g2: flags=69040843<UP,BROADCAST,RUNNING,MULTICAST,DEPRECATED,IPv4,NOFAILOVE                                                                                      R,STANDBY,INACTIVE> mtu 1500 index 4
+        inet 10.161.31.131 netmask ffffff00 broadcast 10.161.31.255
+        groupname GRP1
+        ether 0:14:4f:9d:8d:e
+e1000g3: flags=69040843<UP,BROADCAST,RUNNING,MULTICAST,DEPRECATED,IPv4,NOFAILOVE                                                                                      R,STANDBY,INACTIVE> mtu 1500 index 5
+        inet 172.21.20.143 netmask ffffffe0 broadcast 172.21.20.159
+        groupname GRP2
+        ether 0:14:4f:9d:8d:f
+e1000g4: flags=1000843<UP,BROADCAST,RUNNING,MULTICAST,IPv4> mtu 1500 index 6
+        inet 10.161.31.17 netmask ffffff00 broadcast 10.161.31.255
+        groupname GRP1
+        ether 0:15:17:3c:d1:d0
+e1000g4:1: flags=9040842<BROADCAST,RUNNING,MULTICAST,DEPRECATED,IPv4,NOFAILOVER>                                                                                       mtu 1500 index 6
+        inet 10.161.31.133 netmask ffffff00 broadcast 10.161.31.255
+e1000g5: flags=1000843<UP,BROADCAST,RUNNING,MULTICAST,IPv4> mtu 1500 index 7
+        inet 172.21.20.145 netmask ffffffe0 broadcast 172.21.20.159
+        groupname GRP2
+        ether 0:15:17:3c:d1:d1
+e1000g5:1: flags=9040842<BROADCAST,RUNNING,MULTICAST,DEPRECATED,IPv4,NOFAILOVER>                                                                                       mtu 1500 index 7
+        inet 172.21.20.144 netmask ffffffe0 broadcast 172.21.20.159
+[root@smsiny-a]> netstat -nrv
+
+IRE Table: IPv4
+  Destination             Mask           Gateway          Device Mxfrg Rtt   Ref                                                                                       Flg  Out  In/Fwd
+-------------------- --------------- -------------------- ------ ----- ----- ---                                                                                       --- ----- ------
+default              0.0.0.0         10.161.2.254                 1500*    0   1                                                                                       UG  8995849      0
+10.161.2.0           255.255.255.0   10.161.2.108         e1000g0  1500*    0                                                                                         1 U    17382      0
+10.161.31.0          255.255.255.0   10.161.31.17         e1000g4  1500*    0                                                                                         1 U    40416      0
+10.161.31.0          255.255.255.0   10.161.31.17         e1000g2  1500*    0                                                                                         1 U    34885      0
+10.161.105.0         255.255.255.0   10.161.105.105       e1000g1  1500*    0                                                                                         1 U      635      0
+10.161.172.0         255.255.255.0   10.161.105.254               1500*    0   1                                                                                       UG       3      0
+10.161.176.0         255.255.255.0   10.161.105.254               1500*    0   1                                                                                       UG       3      0
+10.163.6.10          255.255.255.255 172.21.20.129                1500*    0   1                                                                                       UGH      0      0
+10.163.6.44          255.255.255.255 172.21.20.129                1500*    0   1                                                                                       UGH      0      0
+172.21.20.128        255.255.255.224 172.21.20.145        e1000g5  1500*    0                                                                                         1 U   6908963      0
+172.21.20.128        255.255.255.224 172.21.20.145        e1000g3  1500*    0                                                                                         1 U      186      0
+224.0.0.0            240.0.0.0       10.161.2.108         e1000g0  1500*    0                                                                                         1 U        0      0
+127.0.0.1            255.255.255.255 127.0.0.1            lo0     8232*    0   5                                                                                       UH   67326      0
+[root@smsiny-a]>
+[root@smsiny-a]>
+[root@smsiny-a]> iostat -en
+  ---- errors ---
+  s/w h/w trn tot device
+    0   0   0   0 md/d102
+    0   0   0   0 md/d103
+    0   0   0   0 md/d110
+    0   0   0   0 md/d202
+    0   0   0   0 md/d203
+    0   0   0   0 md/d220
+    0   0   0   0 md/d300
+    0   0   0   0 md/d302
+    0   0   0   0 md/d303
+    0   0   0   0 md/d700
+    0   0   0   0 md/d800
+    0   0   0   0 md/d801
+    0   0   0   0 md/d802
+    0   0   0   0 md/d900
+    0   0   0   0 md/d901
+    0   0   0   0 md/d902
+    4 163  20 187 c0t0d0
+    0   0   1   1 c1t0d0
+    0   0   0   0 c0t1d0
+    0   0   0   0 c0t2d0
+    0   0   0   0 c0t3d0
+    0   0   0   0 smsiny-a:vold(pid559)
+[root@smsiny-a]> eeprom
+ttya-rts-dtr-off=false
+ttya-ignore-cd=true
+keyboard-layout: data not available.
+reboot-command: data not available.
+security-mode=none
+security-password: data not available.
+security-#badlogins=0
+verbosity=min
+pci-mem64?=false
+diag-switch?=false
+local-mac-address?=true
+fcode-debug?=false
+scsi-initiator-id=7
+oem-logo: data not available.
+oem-logo?=false
+oem-banner: data not available.
+oem-banner?=false
+ansi-terminal?=true
+screen-#columns=80
+screen-#rows=34
+ttya-mode=9600,8,n,1,-
+output-device=virtual-console
+input-device=virtual-console
+auto-boot-on-error?=false
+load-base=16384
+auto-boot?=false
+network-boot-arguments: data not available.
+boot-command=boot
+boot-file: data not available.
+boot-device=rootdisk disk1:a
+multipath-boot?=false
+boot-device-index=0
+use-nvramrc?=true
+nvramrc=devalias rootdisk /pci@780/pci@0/pci@9/scsi@0/disk@0:a
+devalias rootmirror /pci@780/pci@0/pci@9/scsi@0/disk@2:a
+." ChassisSerialNumber 0731NNN07S " cr
+error-reset-recovery=boot
+[root@smsiny-a]>
+[root@smsiny-a]>
+oot@smsiny-a]> ^[[A^C
+[root@smsiny-a]> bash
+[root@smsiny-a]> ps -ef |grep format
+    root  3227  3170   0 22:55:21 pts/3       0:00 grep format
+    root  1192 29194   0 22:48:26 pts/1       0:00 format
+[root@smsiny-a]> ps -ef |grep 1192
+    root  3512  3170   0 22:56:18 pts/3       0:00 grep 1192
+    root  1192 29194   0 22:48:26 pts/1       0:00 format
+[root@smsiny-a]>
+[root@smsiny-a]>
+[root@smsiny-a]> kill -9 1192
+[root@smsiny-a]> ps -ef |grep 1192
+    root  3736  3170   0 22:57:03 pts/3       0:00 grep 1192
+    root  1192 29194   0 22:48:26 pts/1       0:00 format
+[root@smsiny-a]>
+[root@smsiny-a]>
+[root@smsiny-a]> ps -ef |grep 1192
+    root  3898  3170   0 22:57:36 pts/3       0:00 grep 1192
+    root  1192 29194   0 22:48:26 pts/1       0:00 format
+[root@smsiny-a]>
+[root@smsiny-a]>
+[root@smsiny-a]>
+[root@smsiny-a]>
+[root@smsiny-a]> iostat -en
+  ---- errors ---
+  s/w h/w trn tot device
+    0   0   0   0 md/d102
+    0   0   0   0 md/d103
+    0   0   0   0 md/d110
+    0   0   0   0 md/d202
+    0   0   0   0 md/d203
+    0   0   0   0 md/d220
+    0   0   0   0 md/d300
+    0   0   0   0 md/d302
+    0   0   0   0 md/d303
+    0   0   0   0 md/d700
+    0   0   0   0 md/d800
+    0   0   0   0 md/d801
+    0   0   0   0 md/d802
+    0   0   0   0 md/d900
+    0   0   0   0 md/d901
+    0   0   0   0 md/d902
+    4 163  21 188 c0t0d0
+    0   0   1   1 c1t0d0
+    0   0   0   0 c0t1d0
+    0   0   0   0 c0t2d0
+    0   0   0   0 c0t3d0
+    0   0   0   0 smsiny-a:vold(pid559)
+[root@smsiny-a]>
+[root@smsiny-a]> cat /etc/vfstab
+#live-upgrade:<Wed Oct 20 17:18:38 -04 2021> updated boot environment <BE-2021>
+#live-upgrade:<Mon Oct 14 14:38:06 VET 2019> updated boot environment <New_BE_19                                                                                      >
+#device         device          mount           FS      fsck    mount   mount
+#to mount       to fsck         point           type    pass    at boot options
+#
+fd      -       /dev/fd fd      -       no      -
+/proc   -       /proc   proc    -       no      -
+#/dev/dsk/c0t3d0s1      -       -       swap    -       no      -
+/dev/md/dsk/d900        -       -       swap    -       no      -
+/dev/md/dsk/d110        /dev/md/rdsk/d110       /       ufs     1       no                                                                                            -
+#/dev/dsk/c0t0d0s1      /dev/rdsk/c0t0d0s1      /var    ufs     1       no                                                                                            -
+/dev/md/dsk/d220        /dev/md/rdsk/d220       /var    ufs     1       no     -
+/dev/md/dsk/d800        /dev/md/rdsk/d800       /md    ufs     1       yes     -
+/dev/md/dsk/d300        /dev/md/rdsk/d300       /var/crash      ufs     2  yes -
+/dev/md/dsk/d700        /dev/md/rdsk/d700       /export/home    ufs     1                                                                                             yes     -
+#/dev/dsk/c0t3d0s0      /dev/rdsk/c0t3d0s0      /md     ufs     2       yes                                                                                           -
+#/dev/dsk/c0t0d0s3      /dev/rdsk/c0t0d0s3      /var/crash      ufs     2                                                                                             yes     -
+/devices        -       /devices        devfs   -       no      -
+ctfs    -       /system/contract        ctfs    -       no      -
+objfs   -       /system/object  objfs   -       no      -
+swap    -       /tmp    tmpfs   -       yes     -
+sharefs         -       /etc/dfs/sharetab       sharefs -       no      -
+[root@smsiny-a]>
+[root@smsiny-a]>
+[root@smsiny-a]> prtdiag -v
+System Configuration:  Oracle Corporation  sun4v Sun Fire T200
+Memory size: 65408 Megabytes
+
+================================ Virtual CPUs ================================
+
+
+CPU ID Frequency Implementation         Status
+------ --------- ---------------------- -------
+0      1200 MHz  SUNW,UltraSPARC-T1     on-line
+1      1200 MHz  SUNW,UltraSPARC-T1     on-line
+2      1200 MHz  SUNW,UltraSPARC-T1     on-line
+3      1200 MHz  SUNW,UltraSPARC-T1     on-line
+4      1200 MHz  SUNW,UltraSPARC-T1     on-line
+5      1200 MHz  SUNW,UltraSPARC-T1     on-line
+6      1200 MHz  SUNW,UltraSPARC-T1     on-line
+7      1200 MHz  SUNW,UltraSPARC-T1     on-line
+8      1200 MHz  SUNW,UltraSPARC-T1     on-line
+9      1200 MHz  SUNW,UltraSPARC-T1     on-line
+10     1200 MHz  SUNW,UltraSPARC-T1     on-line
+11     1200 MHz  SUNW,UltraSPARC-T1     on-line
+12     1200 MHz  SUNW,UltraSPARC-T1     on-line
+13     1200 MHz  SUNW,UltraSPARC-T1     on-line
+14     1200 MHz  SUNW,UltraSPARC-T1     on-line
+15     1200 MHz  SUNW,UltraSPARC-T1     on-line
+16     1200 MHz  SUNW,UltraSPARC-T1     on-line
+17     1200 MHz  SUNW,UltraSPARC-T1     on-line
+18     1200 MHz  SUNW,UltraSPARC-T1     on-line
+19     1200 MHz  SUNW,UltraSPARC-T1     on-line
+20     1200 MHz  SUNW,UltraSPARC-T1     on-line
+21     1200 MHz  SUNW,UltraSPARC-T1     on-line
+22     1200 MHz  SUNW,UltraSPARC-T1     on-line
+23     1200 MHz  SUNW,UltraSPARC-T1     on-line
+24     1200 MHz  SUNW,UltraSPARC-T1     on-line
+25     1200 MHz  SUNW,UltraSPARC-T1     on-line
+26     1200 MHz  SUNW,UltraSPARC-T1     on-line
+27     1200 MHz  SUNW,UltraSPARC-T1     on-line
+28     1200 MHz  SUNW,UltraSPARC-T1     on-line
+29     1200 MHz  SUNW,UltraSPARC-T1     on-line
+30     1200 MHz  SUNW,UltraSPARC-T1     on-line
+31     1200 MHz  SUNW,UltraSPARC-T1     on-line
+
+======================= Physical Memory Configuration ========================
+Segment Table:
+--------------------------------------------------------------
+Base           Segment  Interleave   Bank     Contains
+Address        Size     Factor       Size     Modules
+--------------------------------------------------------------
+0x0            64 GB    4            8 GB     MB/CMP0/CH0/R0/D0
+                                              MB/CMP0/CH0/R0/D1
+                                     8 GB     MB/CMP0/CH0/R1/D0
+                                              MB/CMP0/CH0/R1/D1
+                                     8 GB     MB/CMP0/CH1/R0/D0
+                                              MB/CMP0/CH1/R0/D1
+                                     8 GB     MB/CMP0/CH1/R1/D0
+                                              MB/CMP0/CH1/R1/D1
+                                     8 GB     MB/CMP0/CH2/R0/D0
+                                              MB/CMP0/CH2/R0/D1
+                                     8 GB     MB/CMP0/CH2/R1/D0
+                                              MB/CMP0/CH2/R1/D1
+                                     8 GB     MB/CMP0/CH3/R0/D0
+                                              MB/CMP0/CH3/R0/D1
+                                     8 GB     MB/CMP0/CH3/R1/D0
+                                              MB/CMP0/CH3/R1/D1
+
+
+========================= IO Configuration =========================
+
+            IO                                                                                                                                                        
+Location    Type  Slot Path                                          Name                                                                                                            Model
+----------- ----- ---- --------------------------------------------- -----------                                                                                      -------------- ---------
+IOBD/NET0    PCIE IOBD                /pci@780/pci@0/pci@1/network@0    network-                                                                                      pciex8086,105e
+IOBD/NET1    PCIE IOBD              /pci@780/pci@0/pci@1/network@0,1    network-                                                                                      pciex8086,105e
+IOBD/PCIE    PCIE IOBD                   /pci@780/pci@0/pci@9/scsi@0         scs                                                                                      i-pciex1000,56 LSI,1064E
+IOBD/NET2    PCIE IOBD                /pci@7c0/pci@0/pci@2/network@0    network-                                                                                      pciex8086,105e
+IOBD/NET3    PCIE IOBD              /pci@7c0/pci@0/pci@2/network@0,1    network-                                                                                      pciex8086,105e
+IOBD/PCIE1   PCIE    1                /pci@7c0/pci@0/pci@8/network@0    network-                                                                                      pciex8086,105e SUNW,pcie+
+IOBD/PCIE1   PCIE    1              /pci@7c0/pci@0/pci@8/network@0,1    network-                                                                                      pciex8086,105e SUNW,pcie+
+IOBD/PCIX    PCIX IOBD              /pci@7c0/pci@0/pci@1/pci@0/isa@2                                                                                                             isa
+IOBD/PCIX    PCIX IOBD              /pci@7c0/pci@0/pci@1/pci@0/usb@5       usb-p                                                                                      ciclass,0c0310
+IOBD/PCIX    PCIX IOBD              /pci@7c0/pci@0/pci@1/pci@0/usb@6       usb-p                                                                                      ciclass,0c0310
+IOBD/PCIX    PCIX IOBD              /pci@7c0/pci@0/pci@1/pci@0/ide@8          id                                                                                      e-pci10b9,5229
+IOBD/PCIX0   PCIX    0       /pci@7c0/pci@0/pci@1/pci@0,2/SUNW,qlc@2     SUNW,ql                                                                                      c-pci1077,2312
+
+========================= HW Revisions =======================================
+
+System PROM revisions:
+----------------------
+OBP 4.30.4.e 2013/09/23 16:08
+
+IO ASIC revisions:
+------------------
+Location             Path                                          Device                                                                                                               Revision
+-------------------- --------------------------------------------- -------------                                                                                      ----------------- ---------
+IOBD/SAS-SATA-HBA                                  /pci@780                 SUNW                                                                                      ,sun4v-pci     0
+IOBD/SAS-SATA-HBA                            /pci@780/pci@0              pciex10                                                                                      b5,8532.bc   188
+IOBD/SAS-SATA-HBA                      /pci@780/pci@0/pci@9              pciex10                                                                                      b5,8532.bc   188
+IOBD/IO-BRIDGE                                     /pci@7c0                 SUNW                                                                                      ,sun4v-pci     0
+IOBD/PCI-SWITCH1                             /pci@7c0/pci@0              pciex10                                                                                      b5,8532.bc   188
+IOBD/PCI-BRIDGE                /pci@7c0/pci@0/pci@1/pci@0,2                pciex                                                                                      8086,341.9     9
+IOBD/GBE0                    /pci@780/pci@0/pci@1/network@0     pciex8086,105e.1                                                                                      08e.105e.6     6
+IOBD/GBE0                  /pci@780/pci@0/pci@1/network@0,1     pciex8086,105e.1                                                                                      08e.105e.6     6
+IOBD/GBE1                    /pci@7c0/pci@0/pci@2/network@0     pciex8086,105e.1                                                                                      08e.105e.6     6
+IOBD/GBE1                  /pci@7c0/pci@0/pci@2/network@0,1     pciex8086,105e.1                                                                                      08e.105e.6     6
+IOBD/SAS-SATA-HBA               /pci@780/pci@0/pci@9/scsi@0       pciex1000,56.1                                                                                      000.1000.2     2
+
+============================ Environmental Status ============================
+Fan sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status
+----------------------------------------------------------------
+0731NNN07S:CH/FT0/FM0              RS                 ok
+0731NNN07S:CH/FT0/FM1              RS                 ok
+0731NNN07S:CH/FT0/FM2              RS                 ok
+0731NNN07S:CH/FT2                  RS                 ok
+
+Temperature sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status
+----------------------------------------------------------------
+0731NNN07S:CH/IOBD/IOB             T_CORE             ok
+0731NNN07S:CH/IOBD                 T_AMB              ok
+0731NNN07S:CH/MB/CMP0              T_TCORE            ok
+0731NNN07S:CH/MB/CMP0              T_BCORE            ok
+0731NNN07S:CH/MB                   T_AMB              ok
+0731NNN07S:CH/PDB                  T_AMB              ok
+
+Current sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status
+----------------------------------------------------------------
+0731NNN07S:CH/MB                   I_VCORE            ok
+0731NNN07S:CH/MB                   I_VMEML            ok
+0731NNN07S:CH/MB                   I_VMEMR            ok
+
+Current indicators:
+----------------------------------------------------------------
+Location                           Indicator          Condition
+----------------------------------------------------------------
+0731NNN07S:CH/IOBD                 I_USB0             ok
+0731NNN07S:CH/IOBD                 I_USB1             ok
+0731NNN07S:CH/FIOBD                I_USB              ok
+
+Voltage sensors:
+----------------------------------------------------------------
+Location                           Sensor             Status
+----------------------------------------------------------------
+0731NNN07S:CH/SC/BAT               V_BAT              ok
+0731NNN07S:CH/IOBD                 V_+1V5             ok
+0731NNN07S:CH/IOBD                 V_+1V8             ok
+0731NNN07S:CH/IOBD                 V_+3V3MAIN         ok
+0731NNN07S:CH/IOBD                 V_+3V3STBY         ok
+0731NNN07S:CH/IOBD                 V_+1V              ok
+0731NNN07S:CH/IOBD                 V_+1V2             ok
+0731NNN07S:CH/IOBD                 V_+5V              ok
+0731NNN07S:CH/IOBD                 V_-12V             ok
+0731NNN07S:CH/IOBD                 V_+12V             ok
+0731NNN07S:CH/MB                   V_+1V5             ok
+0731NNN07S:CH/MB                   V_VMEML            ok
+0731NNN07S:CH/MB                   V_VMEMR            ok
+0731NNN07S:CH/MB                   V_VTTL             ok
+0731NNN07S:CH/MB                   V_VTTR             ok
+0731NNN07S:CH/MB                   V_+3V3STBY         ok
+0731NNN07S:CH/MB                   V_VCORE            ok
+
+LEDs:
+----------------------------------------------------------------
+Location                           LED                State
+----------------------------------------------------------------
+0731NNN07S:CH/FT0/FM0              SERVICE            off
+0731NNN07S:CH/FT0/FM1              SERVICE            off
+0731NNN07S:CH/FT0/FM2              SERVICE            off
+0731NNN07S:CH/FT2                  SERVICE            off
+0731NNN07S:CH/SYS                  ACT                steady
+0731NNN07S:CH/SYS                  LOCATE             off
+0731NNN07S:CH/SYS                  SERVICE            steady
+0731NNN07S:CH/SYS                  REAR_FAULT         off
+0731NNN07S:CH/SYS                  TEMP_FAULT         off
+0731NNN07S:CH/SYS                  TOP_FAN_FAULT      off
+0731NNN07S:CH/HDD0                 SERVICE            off
+0731NNN07S:CH/HDD0                 OK2RM              off
+0731NNN07S:CH/HDD1                 SERVICE            off
+0731NNN07S:CH/HDD1                 OK2RM              off
+0731NNN07S:CH/HDD2                 SERVICE            off
+0731NNN07S:CH/HDD2                 OK2RM              off
+0731NNN07S:CH/HDD3                 SERVICE            off
+0731NNN07S:CH/HDD3                 OK2RM              off
+
+============================ FRU Status ============================
+Location                           Name      Status
+------------------------------------------------------
+0731NNN07S:CH/FT0/FM0              FAN       enabled
+0731NNN07S:CH/FT0/FM1              FAN       enabled
+0731NNN07S:CH/FT0/FM2              FAN       enabled
+0731NNN07S:CH/FT2                  FAN       enabled
+0731NNN07S:CH                      SC        enabled
+0731NNN07S:CH                      IOBD      disabled
+0731NNN07S:CH                      MB        enabled
+0731NNN07S:CH/MB/CMP0/CH0/R0/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH0/R0/D1    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH0/R1/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH0/R1/D1    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH1/R0/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH1/R0/D1    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH1/R1/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH1/R1/D1    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH2/R0/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH2/R0/D1    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH2/R1/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH2/R1/D1    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH3/R0/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH3/R0/D1    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH3/R1/D0    DIMM      enabled
+0731NNN07S:CH/MB/CMP0/CH3/R1/D1    DIMM      enabled
+0731NNN07S:CH                      PDB       enabled
+0731NNN07S:CH                      FIOBD     enabled
+0731NNN07S:CH                      SASBP     enabled
+0731NNN07S:CH/PS0                  PS        enabled
+0731NNN07S:CH/PS1                  PS        enabled
+
+============================ FW Version ============================
+Version
+------------------------------------------------------------
+System Firmware 6.7.13  2013/09/24 08:05
+
+====================== System PROM revisions =======================
+Version
+------------------------------------------------------------
+OBP 4.30.4.e 2013/09/23 16:08
+
+Chassis Serial Number
+---------------------
+0731NNN07S
+[root@smsiny-a]>
+[root@smsiny-a]> 
+[root@smsiny-a]> cat /etc/vfstab
+#live-upgrade:<Wed Oct 20 17:18:38 -04 2021> updated boot environment <BE-2021>
+#live-upgrade:<Mon Oct 14 14:38:06 VET 2019> updated boot environment <New_BE_19                                                                                      >
+#device         device          mount           FS      fsck    mount   mount
+#to mount       to fsck         point           type    pass    at boot options
+#
+fd      -       /dev/fd fd      -       no      -
+/proc   -       /proc   proc    -       no      -
+#/dev/dsk/c0t3d0s1      -       -       swap    -       no      -
+/dev/md/dsk/d900        -       -       swap    -       no      -
+/dev/md/dsk/d110        /dev/md/rdsk/d110       /       ufs     1       no                                                                                            -
+#/dev/dsk/c0t0d0s1      /dev/rdsk/c0t0d0s1      /var    ufs     1       no                                                                                            -
+/dev/md/dsk/d220        /dev/md/rdsk/d220       /var    ufs     1       no     -
+/dev/md/dsk/d800        /dev/md/rdsk/d800       /md    ufs     1       yes     -
+/dev/md/dsk/d300        /dev/md/rdsk/d300       /var/crash      ufs     2  yes -
+/dev/md/dsk/d700        /dev/md/rdsk/d700       /export/home    ufs     1                                                                                             yes     -
+#/dev/dsk/c0t3d0s0      /dev/rdsk/c0t3d0s0      /md     ufs     2       yes                                                                                           -
+#/dev/dsk/c0t0d0s3      /dev/rdsk/c0t0d0s3      /var/crash      ufs     2                                                                                             yes     -
+/devices        -       /devices        devfs   -       no      -
+ctfs    -       /system/contract        ctfs    -       no      -
+objfs   -       /system/object  objfs   -       no      -
+swap    -       /tmp    tmpfs   -       yes     -
+sharefs         -       /etc/dfs/sharetab       sharefs -       no      -
+[root@smsiny-a]> metastat
+d220: Mirror
+    Submirror 0: d202
+      State: Needs maintenance
+    Submirror 1: d203
+      State: Okay
+    Pass: 1
+    Read option: roundrobin (default)
+    Write option: parallel (default)
+    Size: 49597824 blocks (23 GB)
+
+d202: Submirror of d220
+    State: Needs maintenance
+    Invoke: metareplace d220 c0t0d0s1 <new device>
+    Size: 49597824 blocks (23 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t0d0s1          0     No     Maintenance   Yes
+
+
+d203: Submirror of d220
+    State: Okay
+    Size: 49597824 blocks (23 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t1d0s1          0     No            Okay   Yes
+
+
+d300: Mirror
+    Submirror 0: d303
+      State: Okay
+    Submirror 1: d302
+      State: Needs maintenance
+    Pass: 1
+    Read option: roundrobin (default)
+    Write option: parallel (default)
+    Size: 49373952 blocks (23 GB)
+
+d303: Submirror of d300
+    State: Okay
+    Size: 49373952 blocks (23 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t1d0s3          0     No            Okay   Yes
+
+
+d302: Submirror of d300
+    State: Needs maintenance
+    Invoke: metareplace d300 c0t0d0s3 <new device>
+    Size: 49373952 blocks (23 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t0d0s3          0     No     Maintenance   Yes
+
+
+d800: Mirror
+    Submirror 0: d801
+      State: Okay
+    Submirror 1: d802
+      State: Okay
+    Pass: 1
+    Read option: roundrobin (default)
+    Write option: parallel (default)
+    Size: 135177984 blocks (64 GB)
+
+d801: Submirror of d800
+    State: Okay
+    Size: 135177984 blocks (64 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t3d0s0          0     No            Okay   Yes
+
+
+d802: Submirror of d800
+    State: Okay
+    Size: 135177984 blocks (64 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t2d0s0          0     No            Okay   Yes
+
+
+d110: Mirror
+    Submirror 0: d102
+      State: Needs maintenance
+    Submirror 1: d103
+      State: Okay
+    Pass: 1
+    Read option: roundrobin (default)
+    Write option: parallel (default)
+    Size: 82629120 blocks (39 GB)
+
+d102: Submirror of d110
+    State: Needs maintenance
+    Invoke: metareplace d110 c0t0d0s0 <new device>
+    Size: 82629120 blocks (39 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t0d0s0          0     No     Maintenance   Yes
+
+
+d103: Submirror of d110
+    State: Okay
+    Size: 82629120 blocks (39 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t1d0s0          0     No            Okay   Yes
+
+
+d900: Mirror
+    Submirror 0: d901
+      State: Okay
+    Submirror 1: d902
+      State: Okay
+    Pass: 1
+    Read option: roundrobin (default)
+    Write option: parallel (default)
+    Size: 151296768 blocks (72 GB)
+
+d901: Submirror of d900
+    State: Okay
+    Size: 151296768 blocks (72 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t3d0s1          0     No            Okay   Yes
+
+
+d902: Submirror of d900
+    State: Okay
+    Size: 151296768 blocks (72 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+        c0t2d0s1          0     No            Okay   Yes
+
+
+d700: Concat/Stripe
+    Size: 209727360 blocks (100 GB)
+    Stripe 0: (interlace: 68 blocks)
+        Device     Start Block  Dbase   Reloc
+        c0t0d0s4          0     No      Yes
+        c0t1d0s4          0     No      Yes
+
+Device Relocation Information:
+Device   Reloc  Device ID
+c0t1d0   Yes    id1,sd@n5000c5000c943c7f
+c0t0d0   Yes    id1,sd@n5000c5000f92ce47
+c0t2d0   Yes    id1,sd@n5000c5000f44ac73
+c0t3d0   Yes    id1,sd@n5000c5001cb5a5cb
+[root@smsiny-a]> iostat -En
+c0t0d0           Soft Errors: 4 Hard Errors: 164 Transport Errors: 21
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Serial No: 090498LWEN
+Size: 146.81GB <146810536448 bytes>
+Media Error: 4 Device Not Ready: 0 No Device: 26 Recoverable: 4
+Illegal Request: 2 Predictive Failure Analysis: 2
+c1t0d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 1
+Vendor: MATSHITA Product: CD-RW  CW-8124   Revision: DZ15 Serial No:
+Size: 0.00GB <0 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 1 Predictive Failure Analysis: 0
+c0t1d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Serial No: 083096QZTQ
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 2 Predictive Failure Analysis: 0
+c0t2d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Serial No: 084898BRGX
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 2 Predictive Failure Analysis: 0
+c0t3d0           Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST914603SSUN146G Revision: 0D70 Serial No: 095182AWKF
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 0 Predictive Failure Analysis: 0
+[root@smsiny-a]> timed out waiting for input: auto-logout
+[root@smsiny-a]> bash
+[root@smsiny-a]>
+[root@smsiny-a]> iostat -iE;
+sd1       Soft Errors: 4 Hard Errors: 164 Transport Errors: 21
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Device Id: id1,sd@n5000c5000f92ce47
+Size: 146.81GB <146810536448 bytes>
+Media Error: 4 Device Not Ready: 0 No Device: 26 Recoverable: 4
+Illegal Request: 2 Predictive Failure Analysis: 2
+sd2       Soft Errors: 0 Hard Errors: 0 Transport Errors: 1
+Vendor: MATSHITA Product: CD-RW  CW-8124   Revision: DZ15 Device Id:
+Size: 0.00GB <0 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 1 Predictive Failure Analysis: 0
+sd3       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Device Id: id1,sd@n5000c5000c943c7f
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 2 Predictive Failure Analysis: 0
+sd4       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST914602SSUN146G Revision: 0603 Device Id: id1,sd@n5000c5000f44ac73
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 2 Predictive Failure Analysis: 0
+sd5       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
+Vendor: SEAGATE  Product: ST914603SSUN146G Revision: 0D70 Device Id: id1,sd@n5000c5001cb5a5cb
+Size: 146.81GB <146810536448 bytes>
+Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0
+Illegal Request: 0 Predictive Failure Analysis: 0
+[root@smsiny-a]> lufslist boot_environment_name
+ERROR: boot environment <boot_environment_name> does not exist
+[root@smsiny-a]>
+[root@smsiny-a]> lustatus
+Boot Environment           Is       Active Active    Can    Copy
+Name                       Complete Now    On Reboot Delete Status
+-------------------------- -------- ------ --------- ------ ----------
+Old_BE                     yes      no     no        yes    -
+BE-2021                    yes      yes    yes       no     -
+[root@smsiny-a]>
+[root@smsiny-a]>
+

@@ -1,0 +1,223 @@
+Punto Red
+
+edwin.morales@puntored.co
+
+Rafael plazas call center/ Domicilios Director de operaciones
+
+
+set /SP/diag/snapshot dump_uri=sftp://abolivar:"Latinux168*"@10.246.252.67/var/tmp
+
+set /SP/diag/snapshot dump_uri=sftp://root:"Seguridad123,."@10.246.4.64/var/tmp
+
+show /SP/faultmgmt/0/faults/0
+
+set /SYS/NEM0 clear_fault_action=true
+
+
+
+
+
+
+
+
+-> show /SP/logs/event/list Class==Fault
+
+Event
+ID     Date/Time                 Class     Type      Severity
+-----  ------------------------  --------  --------  --------
+1382   Tue Nov  8 09:15:46 2022  Fault     Warning   minor
+       Warning: /coredump is nearly full
+1381   Tue May 24 09:59:15 2022  Fault     Fault     critical
+       Fault detected at time = Tue May 24 09:59:15 2022. The suspect component:
+        /SYS/NEM0 has fault.chassis.device.fail with probability=100. Refer to h
+       ttp://www.sun.com/msg/SPX86-8000-1D for details.
+1370   Wed Feb 16 13:24:55 2022  Fault     UUID_Repaired  minor
+       Fault with UUID 9b3bc31a-3a23-650b-ea63-b195ff10cf6f repaired
+1369   Wed Feb 16 13:24:55 2022  Fault     Repair    minor
+       Component /SYS/CMM repaired
+1368   Wed Feb 16 13:24:55 2022  Fault     Repair    minor
+       Fault fault.chassis.config.device.fail on component /SYS/CMM cleared
+1366   Sun Apr 25 19:45:39 2021  Fault     Warning   minor
+       Warning: /coredump is nearly full
+1365   Sat Oct 31 17:03:59 2020  Fault     Fault     critical
+       Fault detected at time = Sat Oct 31 17:03:59 2020. The suspect component:
+        /SYS/CMM has fault.chassis.config.device.fail with probability=100. Refe
+       r to http://www.sun.com/msg/SPX86-8003-15 for details.
+1360   Fri Aug 14 12:21:20 2020  Fault     UUID_Repaired  minor
+       Fault with UUID 3e637af8-b553-6c5b-fb7b-fbca867775a7 repaired
+1359   Fri Aug 14 12:21:20 2020  Fault     Repair    minor
+       Component /SYS/CMM repaired
+1358   Fri Aug 14 12:21:20 2020  Fault     Repair    minor
+       Fault fault.chassis.config.device.fail on component /SYS/CMM cleared
+Paused: press any key to continue, or 'q' to quit1356   Fri Jul  3 12:25:23 2020  Fault     Fault     critical
+       Fault detected at time = Fri Jul  3 12:25:23 2020. The suspect component:
+        /SYS/CMM has fault.chassis.config.device.fail with probability=100. Refe
+       r to http://www.sun.com/msg/SPX86-8003-15 for details.
+1354   Mon May 25 09:00:05 2020  Fault     UUID_Repaired  minor
+       Fault with UUID 3cb7429f-c56d-ca3c-d986-d5f2d812ba6d repaired
+1353   Mon May 25 09:00:05 2020  Fault     Repair    minor
+       Component /SYS/CMM repaired
+1352   Mon May 25 09:00:05 2020  Fault     Repair    minor
+       Fault fault.chassis.config.device.fail on component /SYS/CMM cleared
+1350   Tue May 19 19:06:04 2020  Fault     Fault     critical
+       Fault detected at time = Tue May 19 19:06:04 2020. The suspect component:
+        /SYS/CMM has fault.chassis.config.device.fail with probability=100. Refe
+       r to http://www.sun.com/msg/SPX86-8003-15 for details.
+1348   Fri Sep 20 12:58:45 2019  Fault     UUID_Repaired  minor
+       Fault with UUID b88a578a-3e55-416c-eb15-f9d2a523b527 repaired
+1347   Fri Sep 20 12:58:45 2019  Fault     Repair    minor
+       Component /SYS/PS1 repaired
+1346   Fri Sep 20 12:58:45 2019  Fault     Repair    minor
+       Fault fault.chassis.power.ext-fail on component /SYS/PS1 cleared
+1344   Fri Sep 20 12:58:42 2019  Fault     UUID_Repaired  minor
+       Fault with UUID 81140432-d494-4e65-ce94-966ff825c962 repaired
+1343   Fri Sep 20 12:58:42 2019  Fault     Repair    minor
+       Component /SYS/PS0 repaired
+Paused: press any key to continue, or 'q' to quit1342   Fri Sep 20 12:58:42 2019  Fault     Repair    minor
+       Fault fault.chassis.power.ext-fail on component /SYS/PS0 cleared
+1340   Fri Sep 20 12:58:15 2019  Fault     Fault     critical
+       Fault detected at time = Fri Sep 20 12:58:15 2019. The suspect component:
+        /SYS/PS0 has fault.chassis.power.ext-fail with probability=100. Refer to
+        http://www.sun.com/msg/SPX86-8003-73 for details.
+1338   Fri Sep 20 12:58:13 2019  Fault     Fault     critical
+       Fault detected at time = Fri Sep 20 12:58:13 2019. The suspect component:
+        /SYS/PS1 has fault.chassis.power.ext-fail with probability=100. Refer to
+        http://www.sun.com/msg/SPX86-8003-73 for details.
+1336   Thu Sep 19 18:49:11 2019  Fault     UUID_Repaired  minor
+       Fault with UUID d3e090db-9e15-67f1-ee00-8beeeddb4c8a repaired
+1335   Thu Sep 19 18:49:11 2019  Fault     Repair    minor
+       Component /SYS/PS0 repaired
+1334   Thu Sep 19 18:49:11 2019  Fault     Repair    minor
+       Fault fault.chassis.power.ext-fail on component /SYS/PS0 cleared
+1332   Thu Sep 19 18:49:09 2019  Fault     UUID_Repaired  minor
+       Fault with UUID 0ce80c00-afe0-6b38-8fb6-987e5336454b repaired
+1331   Thu Sep 19 18:49:09 2019  Fault     Repair    minor
+       Component /SYS/PS1 repaired
+1330   Thu Sep 19 18:49:09 2019  Fault     Repair    minor
+       Fault fault.chassis.power.ext-fail on component /SYS/PS1 cleared
+1328   Thu Sep 19 18:48:45 2019  Fault     Fault     critical
+       Fault detected at time = Thu Sep 19 18:48:45 2019. The suspect component:
+        /SYS/PS0 has fault.chassis.power.ext-fail with probability=100. Refer to
+        http://www.sun.com/msg/SPX86-8003-73 for details.
+Paused: press any key to continue, or 'q' to quit
+-> show -d targets /SP/faultmgmt
+
+ /SP/faultmgmt
+    Targets:
+        shell
+        0 (/SYS/NEM0)
+
+
+-> show /SP/faultmgmt/0/faults/0
+
+ /SP/faultmgmt/0/faults/0
+    Targets:
+
+    Properties:
+        class = fault.chassis.device.fail
+        sunw-msg-id = SPX86-8000-1D
+        component = /SYS/NEM0
+        uuid = 3dbaff84-f32e-eb4f-942c-ecdc034b3467
+        timestamp = 2022-05-24/09:59:15
+        detector = /SYS/NEM0/ERR
+        fru_part_number = 7078194
+        fru_serial_number = 465769T+1424RW01NT
+        fru_manufacturer = CELESTICA CORPORATION
+        fru_name = SUN BLADE 6000 ETHERNET SWITCHED NEM 24P 10GE
+        system_manufacturer = Oracle Corporation
+        system_name = SUN BLADE 6000 MODULAR SYSTEM
+        system_part_number = 541-4239-01
+        system_serial_number = AK00139916
+        chassis_manufacturer = Oracle Corporation
+        chassis_name = SUN BLADE 6000 MODULAR SYSTEM
+        chassis_part_number = 541-4239-01
+        chassis_serial_number = AK00139916
+        system_component_manufacturer = Oracle Corporation
+        system_component_name = Sun Blade X6270 M3
+        system_component_part_number = 32119721+76+1
+        system_component_serial_number = 1336FMY029
+        _list_idx = 0
+        _list_sz = 1
+
+    Commands:
+        cd
+        show
+
+-> set /SYS/NEM0 clear_fault_action=true
+Are you sure you want to clear /SYS/NEM0 (y/n)? y
+Set 'clear_fault_action' to 'true'
+
+-> show -d targets /SP/faultmgmt
+
+ /SP/faultmgmt
+    Targets:
+        shell
+        0 (/SYS/NEM0)
+
+
+-> show /SP/faultmgmt/0/faults/0
+
+ /SP/faultmgmt/0/faults/0
+    Targets:
+
+    Properties:
+        class = fault.chassis.device.fail
+        sunw-msg-id = SPX86-8000-1D
+        component = /SYS/NEM0
+        uuid = 56acb187-4eac-e76b-861d-b60a60949747
+        timestamp = 2023-03-04/00:57:53
+        detector = /SYS/NEM0/ERR
+        fru_part_number = 7078194
+        fru_serial_number = 465769T+1424RW01NT
+        fru_manufacturer = CELESTICA CORPORATION
+        fru_name = SUN BLADE 6000 ETHERNET SWITCHED NEM 24P 10GE
+        system_manufacturer = Oracle Corporation
+        system_name = SUN BLADE 6000 MODULAR SYSTEM
+        system_part_number = 541-4239-01
+        system_serial_number = AK00139916
+        chassis_manufacturer = Oracle Corporation
+        chassis_name = SUN BLADE 6000 MODULAR SYSTEM
+        chassis_part_number = 541-4239-01
+        chassis_serial_number = AK00139916
+        system_component_manufacturer = Oracle Corporation
+        system_component_name = Sun Blade X6270 M3
+        system_component_part_number = 32119721+76+1
+        system_component_serial_number = 1336FMY029
+        _list_idx = 0
+        _list_sz = 1
+
+    Commands:
+        cd
+        show
+
+-> show /SP/logs/event/list Class==Fault
+
+Event
+ID     Date/Time                 Class     Type      Severity
+-----  ------------------------  --------  --------  --------
+1446   Sat Mar  4 00:57:53 2023  Fault     Fault     critical
+       Fault detected at time = Sat Mar  4 00:57:53 2023. The suspect component:
+        /SYS/NEM0 has fault.chassis.device.fail with probability=100. Refer to h
+       ttp://www.sun.com/msg/SPX86-8000-1D for details.
+1445   Sat Mar  4 00:57:50 2023  Fault     UUID_Repaired  minor
+       Fault with UUID 3dbaff84-f32e-eb4f-942c-ecdc034b3467 repaired
+1444   Sat Mar  4 00:57:50 2023  Fault     Repair    minor
+       Component /SYS/NEM0 repaired
+1443   Sat Mar  4 00:57:50 2023  Fault     Repair    minor
+       Fault fault.chassis.device.fail on component /SYS/NEM0 cleared
+1382   Tue Nov  8 09:15:46 2022  Fault     Warning   minor
+       Warning: /coredump is nearly full
+1381   Tue May 24 09:59:15 2022  Fault     Fault     critical
+       Fault detected at time = Tue May 24 09:59:15 2022. The suspect component:
+        /SYS/NEM0 has fault.chassis.device.fail with probability=100. Refer to h
+       ttp://www.sun.com/msg/SPX86-8000-1D for details.
+1370   Wed Feb 16 13:24:55 2022  Fault     UUID_Repaired  minor
+       Fault with UUID 9b3bc31a-3a23-650b-ea63-b195ff10cf6f repaired
+1369   Wed Feb 16 13:24:55 2022  Fault     Repair    minor
+       Component /SYS/CMM repaired
+1368   Wed Feb 16 13:24:55 2022  Fault     Repair    minor
+       Fault fault.chassis.config.device.fail on component /SYS/CMM cleared
+1366   Sun Apr 25 19:45:39 2021  Fault     Warning   minor
+       Warning: /coredump is nearly full
+Paused: press any key to continue, or 'q' to quit
+

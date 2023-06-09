@@ -1,0 +1,231 @@
+Waiting for daemons to initialize...
+
+Daemons ready
+
+Oracle(R) Integrated Lights Out Manager
+
+Version 3.0.12.8.a r108523
+
+Copyright (c) 2016, Oracle and/or its affiliates. All rights reserved.
+
+Warning: password is set to factory default.
+
+->
+->
+->
+->
+-> show faulty
+Target              | Property               | Value
+--------------------+------------------------+---------------------------------
+
+
+->
+->
+->
+-> start /SP/faultmgmt/shell/
+Are you sure you want to start /SP/faultmgmt/shell (y/n)? y
+
+faultmgmtsp>
+faultmgmtsp> fmadm faulty
+   STATE RESOURCE / UUID
+-------- ----------------------------------------------------------------------
+faultmgmtsp>
+faultmgmtsp>
+faultmgmtsp> exit
+->
+->
+-> start /SP/console
+
+[root@tca106]>
+[root@tca106]> metastat -c
+d12              m   40GB d40
+    d40          s   40GB c0t1d0s0
+d3               m   47GB d23 (maint) d43 (maint)
+    d23          s   47GB c0t0d0s3
+    d43          s   47GB c0t1d0s3
+d7               m   40GB d20
+    d20          s   40GB c0t0d0s0
+d1               m  192GB d21 (maint) d41 (maint)
+    d21          s  192GB c0t0d0s1
+    d41          s  192GB c0t1d0s1
+[root@tca106]>
+[root@tca106]>
+[root@tca106]> metastat
+d12: Mirror
+    Submirror 0: d40
+      State: Okay
+    Pass: 1
+    Read option: roundrobin (default)
+    Write option: parallel (default)
+    Size: 83887500 blocks (40 GB)
+
+d40: Submirror of d12
+    State: Okay
+    Size: 83887500 blocks (40 GB)
+    Stripe 0:
+        Device     Start Block  Dbase        State Reloc Hot Spare
+^C^X
+^C
+
+
+^C
+
+
+
+
+^C
+
+
+^C^C^C
+^C^C^C
+
+^Cc^C^X^C^C^Z^Z^C^C
+
+
+
+
+
+
+^[[B^C
+
+
+^C
+
+
+
+Serial console stopped.
+
+-> start /SP/console -f
+Are you sure you want to start /SP/console (y/n)? y
+
+Serial console started.  To stop, type #.
+
+
+
+^C
+
+
+
+Oct 24 14:12:01 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 24 14:12:01 tca106  mpt_cmd_timeout: Restarting HBA
+^C
+
+metastat: Interrupt
+
+[root@tca106]>
+[root@tca106]>
+[root@tca106]> Oct 24 14:15:24 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 24 14:15:24 tca106  mpt_cmd_timeout: Restarting HBA
+
+[root@tca106]>
+[root@tca106]>
+[root@tca106]>
+[root@tca106]> metareplace -e d3
+usage:  metareplace [-s setname] mirror component-old component-new
+        metareplace [-s setname] -e mirror component
+        metareplace [-s setname] [-f] RAID component-old component-new
+        metareplace [-s setname] [-f] -e RAID component
+        metareplace [-s setname] -c metadevice component-old component-new
+[root@tca106]> metareplace -e d3Oct 24 14:19:47 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 24 14:19:47 tca106  mpt_cmd_timeout: Restarting HBA
+
+[root@tca106]> metareplace -e d3 c0t1d0s3
+
+
+Oct 24 14:23:10 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 24 14:23:10 tca106  mpt_cmd_timeout: Restarting HBA
+
+
+
+
+
+
+
+
+^C
+
+
+^C^C^C
+
+
+
+
+^C^C^C^C^C
+
+
+
+Oct 24 14:26:33 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 24 14:26:33 tca106  mpt_cmd_timeout: Restarting HBA
+^C^C^C
+
+
+Oct 24 14:29:56 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 24 14:29:56 tca106  mpt_cmd_timeout: Restarting HBA
+^C
+
+
+
+
+Oct 24 14:37:23 tca106 scsi: WARNING: /pci@400/pci@0/pci@1/scsi@0 (mpt0):
+Oct 24 14:37:23 tca106  mpt_cmd_timeout: Restarting HBA
+^C^C
+
+
+^C^C^C^X^X^C^C^Z^X^C^C^C
+
+
+^C^C
+^C
+
+^C
+
+^C^C
+^C^C
+^C
+
+^C
+^C
+^C
+^C^C^C^C
+
+
+
+
+^C^C^C
+
+
+
+
+
+
+
+[root@tca106]>
+[root@tca106]> iostat -en
+  ---- errors ---
+  s/w h/w trn tot device
+    0   0   0   0 md/d1
+    0   0   0   0 md/d3
+    0   0   0   0 md/d7
+    0   0   0   0 md/d12
+    0   0   0   0 md/d20
+    0   0   0   0 md/d21
+    0   0   0   0 md/d23
+    0   0   0   0 md/d40
+    0   0   0   0 md/d41
+    0   0   0   0 md/d43
+    0   0   0   0 c0t0d0
+    0   0 4773 4773 c0t1d0
+    0   0   0   0 c1t0d0
+    0   0   0   0 c0t3d0
+    0   0   0   0 c6t60002AC0000000000000000900012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000D00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000C00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000A00012C6Cd0
+    0   0   0   0 c6t60002AC0000000000000000B00012C6Cd0
+    0   0   0   0 tca106:vold(pid806)
+[root@tca106]>
+
+
+
+
+

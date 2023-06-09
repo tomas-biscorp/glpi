@@ -1,0 +1,364 @@
+CellCLI> list celldisk detail
+         name:                   CD_00_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:08-04:30
+         deviceName:             /dev/sdq
+         devicePartition:        /dev/sdq3
+         diskType:               HardDisk
+         errorCount:             9
+         freeSpace:              608G
+         id:                     0fa47fc5-d961-410a-88cf-ebf0210dedf3
+         physicalDisk:           DRVYHE
+         size:                   1.057464599609375T
+         status:                 normal
+
+         name:                   CD_01_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdr
+         devicePartition:        /dev/sdr3
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              592G
+         id:                     4e3c2fc0-a4cd-422b-9c1b-aff8a2252b89
+         physicalDisk:           DU0KGE
+         size:                   1.057464599609375T
+         status:                 normal
+
+         name:                   CD_02_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sds
+         devicePartition:        /dev/sds
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              651G
+         id:                     634269e6-49d1-48d9-a9db-bd1502b3656c
+         physicalDisk:           DUAELE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_03_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdt
+         devicePartition:        /dev/sdt
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              587G
+         id:                     cabb974c-a96c-45cd-bc2d-784116a66396
+         physicalDisk:           DU9SYE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_04_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdu
+         devicePartition:        /dev/sdu
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              619G
+         id:                     a57004ca-b5d9-4a6d-9cd7-83026f6eceb9
+         physicalDisk:           DU8UZE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_05_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdv
+         devicePartition:        /dev/sdv
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              571G
+         id:                     231202a3-c3f4-4b5c-9341-98dd24e2ef0c
+         physicalDisk:           DU43TE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_06_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdw
+         devicePartition:        /dev/sdw
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              683G
+         id:                     c49a66a5-d41d-4b3b-b825-bb189eb02e42
+         physicalDisk:           DU9RKE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_07_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdx
+         devicePartition:        /dev/sdx
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              651G
+         id:                     63f4b2a2-8b9d-41bf-9a1c-f7f4345ddc83
+         physicalDisk:           DRXBVE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_08_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdy
+         devicePartition:        /dev/sdy
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              704G
+         id:                     46d71863-81ef-410b-aebe-320efdcf6a97
+         physicalDisk:           DUBK8E
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_09_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdz
+         devicePartition:        /dev/sdz
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              699G
+         id:                     d41fb8dd-5808-4148-985e-1e5757236a0a
+         physicalDisk:           DU9MAE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_10_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdaa
+         devicePartition:        /dev/sdaa
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              683G
+         id:                     835de2bd-9b56-4ec6-822e-779e1f0534c6
+         physicalDisk:           DUAEDE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   CD_11_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:10-04:30
+         deviceName:             /dev/sdab
+         devicePartition:        /dev/sdab
+         diskType:               HardDisk
+         errorCount:             0
+         freeSpace:              651G
+         id:                     6ac489d4-8937-4a32-927f-b199b5fb5978
+         physicalDisk:           DU6AZE
+         size:                   1.0904693603515625T
+         status:                 normal
+
+         name:                   FD_00_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:15-04:30
+         deviceName:             /dev/sdi
+         devicePartition:        /dev/sdi
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     6ab740d6-dd95-44e3-9373-6f3773180666
+         physicalDisk:           11000212812
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_01_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:20-04:30
+         deviceName:             /dev/sdj
+         devicePartition:        /dev/sdj
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     20188a35-8942-4bf1-a204-6d26f0c6b683
+         physicalDisk:           11000212649
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_02_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:25-04:30
+         deviceName:             /dev/sdk
+         devicePartition:        /dev/sdk
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     a0a1aaeb-8b51-46b3-b272-f09f5ca2eaf2
+         physicalDisk:           11000212882
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_03_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:37-04:30
+         deviceName:             /dev/sdl
+         devicePartition:        /dev/sdl
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     7989cc6d-7c3f-4da5-b2bb-36525e27c1ca
+         physicalDisk:           11000212867
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_04_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:42-04:30
+         deviceName:             /dev/sdm
+         devicePartition:        /dev/sdm
+         diskType:               FlashDisk
+         errorCount:             439
+         freeSpace:              0
+         id:                     cd62700c-98f0-4dee-be47-c63a4b38d3d3
+         physicalDisk:           11000213483
+         size:                   186.25G
+         status:                 proactive failure
+
+         name:                   FD_05_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:47-04:30
+         deviceName:             /dev/sdn
+         devicePartition:        /dev/sdn
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     fd6adf71-ef94-49dd-a494-f226ab69e085
+         physicalDisk:           11000213655
+         size:                   186.25G
+         status:                 proactive failure
+
+         name:                   FD_06_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:58:58-04:30
+         deviceName:             /dev/sdo
+         devicePartition:        /dev/sdo
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     cefc6f3b-07dc-4307-b4a1-cdd77f965ed7
+         physicalDisk:           11000214231
+         size:                   186.25G
+         status:                 proactive failure
+
+         name:                   FD_07_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:04-04:30
+         deviceName:             /dev/sdp
+         devicePartition:        /dev/sdp
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     8af25894-71e1-42d6-8ebf-37968e92a4fe
+         physicalDisk:           11000213848
+         size:                   186.25G
+         status:                 proactive failure
+
+         name:                   FD_08_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:09-04:30
+         deviceName:             /dev/sde
+         devicePartition:        /dev/sde
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     f150b040-e9e5-48cf-9464-fbca5b014882
+         physicalDisk:           11000221993
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_09_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:14-04:30
+         deviceName:             /dev/sdf
+         devicePartition:        /dev/sdf
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     af4b6918-532b-4a54-a17e-67b4be5b53aa
+         physicalDisk:           11000222134
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_10_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:19-04:30
+         deviceName:             /dev/sdg
+         devicePartition:        /dev/sdg
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     8a657de9-3b6c-4833-917c-44191fa30c0b
+         physicalDisk:           11000222241
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_11_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:31-04:30
+         deviceName:             /dev/sdh
+         devicePartition:        /dev/sdh
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     34e0d36f-3691-4720-8155-b60bc0bfd469
+         physicalDisk:           11000221736
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_12_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:36-04:30
+         deviceName:             /dev/sda
+         devicePartition:        /dev/sda
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     05c7c791-302b-4b09-8550-577c2ce30520
+         physicalDisk:           11000219846
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_13_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:41-04:30
+         deviceName:             /dev/sdb
+         devicePartition:        /dev/sdb
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     1b319fdc-f262-4771-b380-50f577792c29
+         physicalDisk:           11000219949
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_14_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:52-04:30
+         deviceName:             /dev/sdc
+         devicePartition:        /dev/sdc
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     1ef0802b-6ca9-4b19-ba58-323ec0c824a1
+         physicalDisk:           11000220235
+         size:                   186.25G
+         status:                 normal
+
+         name:                   FD_15_sc01_cel03
+         comment:
+         creationTime:           2014-05-12T21:59:57-04:30
+         deviceName:             /dev/sdd
+         devicePartition:        /dev/sdd
+         diskType:               FlashDisk
+         errorCount:             0
+         freeSpace:              0
+         id:                     99af733a-ceaf-4f24-9c2e-1adbd6e73e80
+         physicalDisk:           11000220230
+         size:                   186.25G
+         status:                 normal
